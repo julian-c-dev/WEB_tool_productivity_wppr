@@ -1,0 +1,17 @@
+/* @fontface */
+/* Global variables */
+/* Color palette */
+/* Mixins*/
+/*Generic elements*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* typography*/
+html {
+  font-size: 62.5%;
+}
+/*# sourceMappingURL=import.css.map */

@@ -1,0 +1,13 @@
+/*Generic elements*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* typography*/
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
