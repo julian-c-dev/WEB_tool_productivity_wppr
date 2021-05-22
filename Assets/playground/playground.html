@@ -11,37 +11,84 @@
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/804d1be908.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="cosWindow">
-      <h2>Costumize your own desktop</h2>
-      <p>It is quick, easy and simple.</p>
-      <p>First, choose your favorite background of the following list:</p>
-      <ul class="cosWindow__screens">
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <div class="cosWindow__sizes">
-        <p>Now, you have to choose the resolution:</p>
-        <input type="radio" name="" id="" /> 600x800px
-        <input type="radio" name="" id="" /> 1024x800px
-        <input type="radio" name="" id="" /> 3024x1200px
+    <div class="tool">
+      <div class="tool__content">
+        <h2>Customize your own <span>Productivity Desktop</span></h2>
+        <p>It's quick, simple and very easy.</p>
+
+        <p>Select your favorite background from the following options:</p>
+        <ul class="tool__screens">
+          <li><img src="/Assets/images/test.jpg" alt="" /></li>
+          <li><img src="/Assets/images/test.jpg" alt="" /></li>
+          <li><img src="/Assets/images/test.jpg" alt="" /></li>
+        </ul>
+
+        <div class="tool__sizes">
+          <p>Choose the resolution of your screen in pixels:</p>
+          <div class="tool__radios">
+            <input type="radio" name="" id="600" />
+            <label for="600">600 x 800</label>
+            <input type="radio" name="" id="1024" />
+            <label for="1024">1024 x 768</label>
+            <input type="radio" name="" id="1920" />
+            <label for="1920">1920 x 1080</label>
+          </div>
+        </div>
+
+        <p>
+          Finally, add your custom titles to each tile:
+          <span>( maximum 6 tiles )</span>
+        </p>
+        <div class="tool__input-tiles">
+          <div class="input-tiles-group">
+            <label for="tile1">Tile 1</label>
+            <input type="text" name="" id="tile1" />
+          </div>
+          <div class="input-tiles-group">
+            <label for="tile2">Tile 2</label>
+            <input type="text" name="" id="tile2" disabled />
+            <i class="fas fa-plus-circle grey"></i>
+          </div>
+          <div class="input-tiles-group hide">
+            <label for="tile3">Tile 3</label>
+            <input type="text" name="" id="tile3" />
+            <i class="fas fa-plus-circle"></i>
+          </div>
+          <div class="input-tiles-group hide">
+            <label for="tile4">Tile 4</label>
+            <input type="text" name="" id="tile4" />
+            <i class="fas fa-plus-circle"></i>
+          </div>
+          <div class="input-tiles-group hide">
+            <label for="tile5">Tile 5</label>
+            <input type="text" name="" id="tile5" />
+            <i class="fas fa-plus-circle"></i>
+          </div>
+          <div class="input-tiles-group hide">
+            <label for="tile6">Tile 6</label>
+            <input type="text" name="" id="tile6" />
+            <i class="fas fa-plus-circle"></i>
+          </div>
+        </div>
+
+        <div class="tool__preview">
+          <p>Format preview:</p>
+          <img src="/Assets/images/test.jpg" alt="" />
+        </div>
       </div>
-      <p>
-        Now, you have to add the tiles and the titles for each one:
-        <span>(maximum 6 tiles)</span>
-      </p>
-      <div class="cosWindow__input-tiles">
-        <input type="text" name="" id="" />
-      </div>
-      <div class="cosWindow__preview"></div>
-      <div class="cosWindow__btns">
-        <button type="submit"></button>
-        <button type="submit"></button>
-        <button type="submit"></button>
+      <div class="tool___footer">
+        <button class="btn" type="submit">Reset</button>
+        <button class="btn btn-generate" type="submit" focus>Generate</button>
+        <button class="btn" type="submit">Close</button>
       </div>
     </div>
+
     <script src="/Assets/app/js/main.js"></script>
   </body>
 </html>

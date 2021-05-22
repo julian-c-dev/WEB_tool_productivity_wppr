@@ -1,0 +1,9 @@
+.grey {
+  color: $dark-slate;
+  &:hover {
+    color: $green;
+  }
+  &-hidden {
+    color: $light-slate;
+  }
+}
