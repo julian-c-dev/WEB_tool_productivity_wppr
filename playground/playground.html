@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/Assets/app/css/import.css" />
+    <link rel="stylesheet" href="/app/css/import.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap"
@@ -17,9 +17,9 @@
     ></script>
   </head>
   <body>
+    <h1>Customize your own <span>Productivity Desktop</span></h1>
     <div class="tool">
       <div class="tool__content">
-        <h2>Customize your own <span>Productivity Desktop</span></h2>
         <p>It's quick, simple and very easy.</p>
 
         <p>Select your favorite background from the following options:</p>
@@ -29,20 +29,8 @@
           <li><img src="/Assets/images/test.jpg" alt="" /></li>
         </ul>
 
-        <div class="tool__sizes">
-          <p>Choose the resolution of your screen in pixels:</p>
-          <div class="tool__radios">
-            <input type="radio" name="" id="600" />
-            <label for="600">600 x 800</label>
-            <input type="radio" name="" id="1024" />
-            <label for="1024">1024 x 768</label>
-            <input type="radio" name="" id="1920" />
-            <label for="1920">1920 x 1080</label>
-          </div>
-        </div>
-
         <p>
-          Finally, add your custom titles to each tile:
+          Add your custom titles to each tile:
           <span>( maximum 6 tiles )</span>
         </p>
         <div class="tool__input-tiles">
@@ -57,38 +45,62 @@
           </div>
           <div class="input-tiles-group hide">
             <label for="tile3">Tile 3</label>
-            <input type="text" name="" id="tile3" />
-            <i class="fas fa-plus-circle"></i>
+            <input type="text" name="" id="tile3" disabled />
+            <i class="fas fa-plus-circle grey"></i>
           </div>
-          <div class="input-tiles-group hide">
+          <div id="input4" class="input-tiles-group hide">
             <label for="tile4">Tile 4</label>
-            <input type="text" name="" id="tile4" />
-            <i class="fas fa-plus-circle"></i>
+            <input type="text" name="" id="tile4" disabled />
+            <i class="fas fa-plus-circle grey"></i>
           </div>
-          <div class="input-tiles-group hide">
+          <div id="input5" class="input-tiles-group hide">
             <label for="tile5">Tile 5</label>
-            <input type="text" name="" id="tile5" />
+            <input type="text" name="" id="tile5" disabled />
             <i class="fas fa-plus-circle"></i>
           </div>
-          <div class="input-tiles-group hide">
+          <div id="input6" class="input-tiles-group hide">
             <label for="tile6">Tile 6</label>
-            <input type="text" name="" id="tile6" />
+            <input type="text" name="" id="tile6" disabled />
             <i class="fas fa-plus-circle"></i>
           </div>
         </div>
 
         <div class="tool__preview">
           <p>Format preview:</p>
-          <img src="/Assets/images/test.jpg" alt="" />
+          <img class="img_preview" src="/Assets/images/tile1.png" alt="" />
+        </div>
+
+        <div class="tool__sizes">
+          <p>Finally, Choose the resolution of your screen in pixels:</p>
+          <div class="tool__radios">
+            <input type="radio" name="" id="600" />
+            <label for="600">600 x 800</label>
+            <input type="radio" name="" id="1024" />
+            <label for="1024">1024 x 768</label>
+            <input type="radio" name="" id="1920" />
+            <label for="1920">1920 x 1080</label>
+          </div>
+        </div>
+
+        <div class="tool___footer">
+          <button class="btn" type="submit">Reset</button>
+          <button class="btn btn-generate" type="submit" focus>Generate</button>
+          <button class="btn" type="submit">Close</button>
         </div>
       </div>
-      <div class="tool___footer">
-        <button class="btn" type="submit">Reset</button>
-        <button class="btn btn-generate" type="submit" focus>Generate</button>
-        <button class="btn" type="submit">Close</button>
-      </div>
     </div>
+    <footer>
+      <p>This is an Open Source Project made by Julian C. Dev.</p>
+      <a
+        href="https://github.com/julian-c-dev/web_project--Productivity_desktops"
+      >
+        Github</a
+      >
+      - julian.c.dev@gmail.com
+      <p>Customize Productivity Desktop Tool &copy; 2021</p>
+    </footer>
 
-    <script src="/Assets/app/js/main.js"></script>
+    <script src="/app/js/main.js"></script>
+    <script src="/app/js/functions.js"></script>
   </body>
 </html>

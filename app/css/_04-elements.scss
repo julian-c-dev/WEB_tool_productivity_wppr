@@ -1,0 +1,31 @@
+/*Generic elements*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* typography*/
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  background: $dark-navy;
+  color: $light-slate;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Courgette";
+  font-size: 3.6rem;
+  span {
+    text-decoration: underline;
+    font-style: italic;
+    color: $green;
+    text-shadow: 0 0 5px $light-navy;
+  }
+}
