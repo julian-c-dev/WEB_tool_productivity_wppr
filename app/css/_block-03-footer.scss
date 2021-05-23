@@ -1,4 +1,10 @@
 footer {
+  background-color: $green-tint;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem 0;
+
   text-align: center;
   font: 1.2rem sans-serif;
   line-height: 0.5;

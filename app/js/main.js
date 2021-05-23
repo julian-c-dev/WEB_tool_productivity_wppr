@@ -12,7 +12,7 @@ function addingTiles() {
   iconPlus.classList.toggle("grey-hidden");
   tileAdd.classList.remove("hide");
   inputs.removeAttribute("disabled");
-  previewChange.src = "/Assets/images/tile2.png";
+  previewChange.src = "/images/tile2.png";
 }
 
 const iconPlus2 = document.getElementsByClassName("fa-plus-circle")[1];
@@ -25,7 +25,7 @@ function addingTiles2() {
   iconPlus2.classList.toggle("grey-hidden");
   tileAdd2.classList.remove("hide");
   inputs2.removeAttribute("disabled");
-  previewChange.src = "/Assets/images/tile3.png";
+  previewChange.src = "/images/tile3.png";
 }
 
 const iconPlus3 = document.getElementsByClassName("fa-plus-circle")[2];
@@ -38,7 +38,7 @@ function addingTiles3() {
   iconPlus3.classList.toggle("grey-hidden");
   tileAdd3.classList.remove("hide");
   inputs3.removeAttribute("disabled");
-  previewChange.src = "/Assets/images/tile4.png";
+  previewChange.src = "/images/tile4.png";
 }
 
 const iconPlus4 = document.getElementsByClassName("fa-plus-circle")[3];
@@ -51,7 +51,7 @@ function addingTiles4() {
   iconPlus4.classList.toggle("grey-hidden");
   tileAdd4.classList.remove("hide");
   inputs4.removeAttribute("disabled");
-  previewChange.src = "/Assets/images/tile5.png";
+  previewChange.src = "/images/tile5.png";
 }
 
 const iconPlus5 = document.getElementsByClassName("fa-plus-circle")[4];
@@ -63,5 +63,5 @@ iconPlus5.addEventListener("click", addingTiles5);
 function addingTiles5() {
   iconPlus5.classList.toggle("grey-hidden");
   inputs5.removeAttribute("disabled");
-  previewChange.src = "/Assets/images/tile6.png";
+  previewChange.src = "/images/tile6.png";
 }
