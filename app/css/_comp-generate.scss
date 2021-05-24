@@ -36,6 +36,7 @@
 .tool__selection {
   width: 10rem;
   height: 10rem;
+  border: none;
   border-radius: 25px;
   &:hover {
     transform: scale(1.05);
@@ -44,36 +45,26 @@
 }
 
 .select1 {
-  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background-image: $selection1;
 }
 
 .select2 {
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-image: $selection2;
 }
 
 .select3 {
-  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-image: $selection3;
 }
 
 .select4 {
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  background-image: $selection4;
 }
 
 .select5 {
-  background-image: linear-gradient(
-    to top,
-    #dbdcd7 0%,
-    #dddcd7 24%,
-    #e2c9cc 30%,
-    #e7627d 46%,
-    #b8235a 59%,
-    #801357 71%,
-    #3d1635 84%,
-    #1c1a27 100%
-  );
+  background-image: $selection5;
 }
 .select6 {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  background-image: $selection6;
 }
 .tool__sizes {
   margin: 1rem;

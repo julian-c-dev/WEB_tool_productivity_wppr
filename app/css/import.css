@@ -362,8 +362,8 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#dbdcd7), color-stop(24%, #dddcd7), color-stop(30%, #e2c9cc), color-stop(46%, #e7627d), color-stop(59%, #b8235a), color-stop(71%, #801357), color-stop(84%, #3d1635), to(#1c1a27));
-  background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
   color: #a8b2d1;
 }
 
@@ -386,12 +386,11 @@ h1 span {
   background-color: rgba(100, 255, 218, 0.1);
 }
 
-footer {
-  background-color: rgba(100, 255, 218, 0.1);
+.footer {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   text-align: center;
   font: 1.2rem sans-serif;
   line-height: 0.5;
@@ -399,8 +398,31 @@ footer {
           box-sizing: unset;
 }
 
-footer a {
-  color: #a8b2d1;
+.footer-light {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: #ccd6f6;
+}
+
+.footer-light a,
+.footer-light a:link,
+.footer-light a:visited,
+.footer-light a:hover,
+.footer-light a:active {
+  color: #ccd6f6;
+  text-decoration: none;
+}
+
+.footer-dark {
+  background-color: #62ffda;
+  color: black;
+}
+
+.footer-dark a,
+.footer-dark a:link,
+.footer-dark a:visited,
+.footer-dark a:hover,
+.footer-dark a:active {
+  color: black;
   text-decoration: none;
 }
 
@@ -535,6 +557,7 @@ footer a {
 .tool__selection {
   width: 10rem;
   height: 10rem;
+  border: none;
   border-radius: 25px;
 }
 
