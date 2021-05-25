@@ -13,19 +13,26 @@ html {
 }
 
 body {
-  background-image: $selection6;
   color: $light-slate;
+  background-image: $selection1;
 }
 
 h1 {
   text-align: center;
   margin: 0 auto;
   font-family: "Courgette";
-  font-size: 3.6rem;
-  span {
-    text-decoration: underline;
-    font-style: italic;
-    color: $green;
-    text-shadow: 0 0 5px $light-navy;
-  }
+  font-size: 2.6rem;
+}
+span {
+  color: $green;
+  text-shadow: 0 0 15px pink;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 1rem;
 }

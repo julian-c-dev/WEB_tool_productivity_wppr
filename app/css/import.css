@@ -1,9 +1,3 @@
-/*
-? Color palette
-*/
-/*
-?  Global variables 
-*/
 /* Mixins*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -29,21 +23,9 @@ body {
 }
 
 /**
-   * Render the `main` element consistently in IE.
-   */
-main {
-  display: block;
-}
-
-/**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
      ========================================================================== */
 /**
@@ -362,75 +344,114 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
   color: #a8b2d1;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a6c1ee));
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 h1 {
   text-align: center;
   margin: 0 auto;
   font-family: "Courgette";
-  font-size: 3.6rem;
+  font-size: 2.6rem;
 }
 
-h1 span {
-  text-decoration: underline;
-  font-style: italic;
+span {
   color: #62ffda;
-  text-shadow: 0 0 5px #112240;
+  text-shadow: 0 0 15px pink;
 }
 
-.banner {
-  padding: 2rem;
-  background-color: rgba(100, 255, 218, 0.1);
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+::-webkit-input-placeholder {
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  color: #a8b2d1;
+}
+
+:-ms-input-placeholder {
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  color: #a8b2d1;
+}
+
+::-ms-input-placeholder {
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  color: #a8b2d1;
+}
+
+::placeholder {
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  color: #a8b2d1;
+}
+
+.container {
+  min-width: 360px;
+  position: relative;
+}
+
+.banner,
+.footer {
+  padding: 2rem 0;
+  background-color: #233554;
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
   padding: 0.5rem 0;
   text-align: center;
   font: 1.2rem sans-serif;
   line-height: 0.5;
-  -webkit-box-sizing: unset;
-          box-sizing: unset;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
-.footer-light {
-  background-color: rgba(100, 255, 218, 0.1);
-  color: #ccd6f6;
-}
-
-.footer-light a,
-.footer-light a:link,
-.footer-light a:visited,
-.footer-light a:hover,
-.footer-light a:active {
+.footer a,
+.footer a:link,
+.footer a:visited,
+.footer a:hover,
+.footer a:active {
   color: #ccd6f6;
   text-decoration: none;
 }
 
-.footer-dark {
-  background-color: #62ffda;
-  color: black;
+.hide {
+  display: none;
 }
 
-.footer-dark a,
-.footer-dark a:link,
-.footer-dark a:visited,
-.footer-dark a:hover,
-.footer-dark a:active {
-  color: black;
-  text-decoration: none;
+/*Responsive elements and classes*/
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .tool__content {
+    font-size: 1.8rem;
+  }
 }
 
 .btn {
   outline: none;
   border: none;
-  padding: 1rem 2rem;
-  border-radius: 25px;
+  -webkit-box-sizing: none;
+          box-sizing: none;
   background-color: rgba(2, 12, 27, 0.7);
   color: white;
 }
@@ -448,7 +469,9 @@ h1 span {
 
 .btn-grad {
   margin: 10px;
-  padding: 15px 45px;
+  width: 220px;
+  height: 40px;
+  border-radius: 50px;
   text-align: center;
   text-transform: uppercase;
   -webkit-transition: 0.5s;
@@ -458,7 +481,6 @@ h1 span {
   font-weight: bold;
   -webkit-box-shadow: 0 0 10px #eee;
           box-shadow: 0 0 10px #eee;
-  border-radius: 10px;
   display: block;
 }
 
@@ -476,7 +498,9 @@ h1 span {
 
 .btn-grad-secondary {
   margin: 10px;
-  padding: 15px 45px;
+  border-radius: 25px;
+  width: 100px;
+  height: 40px;
   text-align: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -495,6 +519,12 @@ h1 span {
   text-decoration: none;
 }
 
+.groupBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .grey {
   color: #495670;
 }
@@ -508,27 +538,39 @@ h1 span {
   border-radius: 25px;
   -webkit-box-shadow: 0 0 8px #62ffda;
           box-shadow: 0 0 8px #62ffda;
-  margin: 2rem 40rem 3.5rem 40rem;
+  margin: 3rem;
+}
+
+@media screen and (min-width: 410px) {
+  .tool {
+    margin: 5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tool {
+    margin: 5rem 16rem;
+  }
 }
 
 .tool__content {
   color: #233554;
   font-family: "Open Sans";
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  font-size: 1.5rem;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  font-size: 1.6rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem 5rem 1.5rem 5rem;
   line-height: 1.2;
 }
 
@@ -540,6 +582,8 @@ h1 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -549,52 +593,98 @@ h1 span {
   margin: 1rem;
 }
 
-.tool__screens li {
-  list-style-type: none;
-  margin: 1rem;
-}
-
-.tool__selection {
-  width: 10rem;
-  height: 10rem;
+.tool__screens .tool__selection {
+  width: 6rem;
+  height: 6rem;
   border: none;
   border-radius: 25px;
 }
 
-.tool__selection:hover {
+.tool__screens .tool__selection:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   border: 2px solid #62ffda;
 }
 
-.select1 {
+.tool__screens .select1 {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a6c1ee));
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
-.select2 {
+.tool__screens .select2 {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
 
-.select3 {
+.tool__screens .select3 {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fff1eb), to(#ace0f9));
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 }
 
-.select4 {
+.tool__screens .select4 {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#48c6ef), to(#6f86d6));
   background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
 }
 
-.select5 {
+.tool__screens .select5 {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#dbdcd7), color-stop(24%, #dddcd7), color-stop(30%, #e2c9cc), color-stop(46%, #e7627d), color-stop(59%, #b8235a), color-stop(71%, #801357), color-stop(84%, #3d1635), to(#1c1a27));
   background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
 }
 
-.select6 {
+.tool__screens .select6 {
   background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
   background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+@media screen and (min-width: 410px) {
+  .tool__screens .tool__selection {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .tool__screens .tool__selection {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+.tool__tiles .tool__input-tiles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 1rem;
+}
+
+.tool__tiles .tool__input-tiles label {
+  font-size: 1.2rem;
+  display: none;
+}
+
+.tool__tiles .tool__input-tiles label:focus {
+  font-weight: bold;
+}
+
+.tool__tiles .tool__input-tiles input {
+  margin-bottom: 0.2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.tool__tiles .tool__input-tiles input:focus {
+  background-color: #62ffda;
+}
+
+@media screen and (min-width: 460px) {
+  .tool__input-tiles label {
+    display: initial;
+  }
 }
 
 .tool__sizes {
@@ -605,17 +695,21 @@ h1 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .tool__sizes .tool__radios label {
-  font-size: 1.2rem;
-  padding: 0 0.5rem 0 0;
+  font-size: 1.5rem;
+  padding: 0 1rem 0 0;
 }
 
 .tool__sizes .tool__radios label:hover {
@@ -623,69 +717,17 @@ h1 span {
   font-weight: bold;
 }
 
-.tool__input-tiles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+@media screen and (min-width: 460px) {
+  .tool__sizes .tool__radios {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
 }
 
-.tool__input-tiles input {
-  margin-bottom: 0.2rem;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
-
-.tool__input-tiles input:focus {
-  background-color: #62ffda;
-}
-
-.tool__input-tiles label {
-  font-size: 1.2rem;
-}
-
-.tool__input-tiles label:focus {
-  font-weight: bold;
-}
-
-.hide {
-  display: none;
-}
-
-.tool__preview {
-  margin-top: 1rem;
-}
-
-.tool__preview p {
-  font-size: small;
+.tool__footer button {
+  display: inline-block;
   text-align: center;
-  color: rgba(2, 12, 27, 0.7);
-}
-
-.tool__preview img {
-  width: 175px;
-  height: 90px;
-  opacity: 0.8;
-}
-
-.tool___footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=import.css.map */

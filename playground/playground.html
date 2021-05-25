@@ -17,95 +17,103 @@
     ></script>
   </head>
   <body>
-    <header class="banner">
-      <h1>Customize your own <span>Productivity Desktop Wallpaper</span></h1>
-    </header>
-    <div class="tool">
-      <div class="tool__content">
-        <p>It's quick, simple and very easy.</p>
+    <div class="container">
+      <!--Begin Banner-->
+      <header class="banner">
+        <h1><span>Productivity</span> Desktop <span>Wallpaper</span> Tool</h1>
+      </header>
+      <!--End Banner-->
 
-        <p>Select your favorite background from the following options:</p>
-        <ul class="tool__screens">
-          <li><div class="tool__selection select1"></div></li>
-          <li><div class="tool__selection select2"></div></li>
-          <li><div class="tool__selection select3"></div></li>
-          <li><div class="tool__selection select4"></div></li>
-          <li><div class="tool__selection select5"></div></li>
-          <li><div class="tool__selection select6"></div></li>
-        </ul>
-
-        <p>
-          Add your custom titles to each tile:
-          <span>( maximum 6 tiles )</span>
-        </p>
-        <div class="tool__input-tiles">
-          <div class="input-tiles-group">
-            <label for="tile1">Tile 1</label>
-            <input type="text" name="" id="tile1" />
-          </div>
-          <div class="input-tiles-group">
-            <label for="tile2">Tile 2</label>
-            <input type="text" name="" id="tile2" disabled />
-            <i class="fas fa-plus-circle grey"></i>
-          </div>
-          <div class="input-tiles-group hide">
-            <label for="tile3">Tile 3</label>
-            <input type="text" name="" id="tile3" disabled />
-            <i class="fas fa-plus-circle grey"></i>
-          </div>
-          <div id="input4" class="input-tiles-group hide">
-            <label for="tile4">Tile 4</label>
-            <input type="text" name="" id="tile4" disabled />
-            <i class="fas fa-plus-circle grey"></i>
-          </div>
-          <div id="input5" class="input-tiles-group hide">
-            <label for="tile5">Tile 5</label>
-            <input type="text" name="" id="tile5" disabled />
-            <i class="fas fa-plus-circle"></i>
-          </div>
-          <div id="input6" class="input-tiles-group hide">
-            <label for="tile6">Tile 6</label>
-            <input type="text" name="" id="tile6" disabled />
-            <i class="fas fa-plus-circle"></i>
+      <!--Begin Main-->
+      <main>
+        <div class="tool">
+          <div class="tool__content">
+            <p>
+              <span>1 - </span> Select your favorite background from the
+              following options:
+            </p>
+            <ul class="tool__screens">
+              <li><div class="tool__selection select1"></div></li>
+              <li><div class="tool__selection select2"></div></li>
+              <li><div class="tool__selection select3"></div></li>
+              <li><div class="tool__selection select4"></div></li>
+              <li><div class="tool__selection select5"></div></li>
+              <li><div class="tool__selection select6"></div></li>
+            </ul>
+            <p>
+              <span>2 - </span>Type your custom title to each tile you wanna
+              add:
+            </p>
+            <div class="tool__tiles">
+              <div class="tool__input-tiles">
+                <div class="input-tiles-group">
+                  <label for="tile1">Tile 1</label>
+                  <input
+                    type="text"
+                    name=""
+                    id="tile1"
+                    placeholder="your first title..."
+                  />
+                </div>
+                <div class="input-tiles-group">
+                  <label for="tile2">Tile 2</label>
+                  <input type="text" name="" id="tile2" disabled />
+                  <i class="fas fa-plus-circle grey"></i>
+                </div>
+                <div class="input-tiles-group">
+                  <label for="tile3">Tile 3</label>
+                  <input type="text" name="" id="tile3" disabled />
+                  <i class="fas fa-plus-circle grey"></i>
+                </div>
+                <div id="input4" class="input-tiles-group">
+                  <label for="tile4">Tile 4</label>
+                  <input type="text" name="" id="tile4" disabled />
+                  <i class="fas fa-plus-circle grey"></i>
+                </div>
+                <div id="input5" class="input-tiles-group">
+                  <label for="tile5">Tile 5</label>
+                  <input type="text" name="" id="tile5" disabled />
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+                <div id="input6" class="input-tiles-group">
+                  <label for="tile6">Tile 6</label>
+                  <input type="text" name="" id="tile6" disabled />
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              <span>3 - </span> Choose the resolution of your screen in pixels:
+            </p>
+            <div class="tool__sizes">
+              <div class="tool__radios">
+                <div class="radio-group">
+                  <input type="radio" name="" id="600" />
+                  <label for="600">600 x 800</label>
+                </div>
+                <div class="radio-group">
+                  <input type="radio" name="" id="1024" />
+                  <label for="1024">1024 x 768</label>
+                </div>
+                <div class="radio-group">
+                  <input type="radio" name="" id="1920" />
+                  <label for="1920">1920 x 1080</label>
+                </div>
+              </div>
+            </div>
+            <div class="groupBtn">
+              <button class="btn btn-grad-secondary" type="submit">
+                Preview
+              </button>
+              <button class="btn btn-grad-secondary" type="submit">
+                Reset
+              </button>
+            </div>
+            <button class="btn btn-grad" type="submit" focus>Generate</button>
           </div>
         </div>
-
-        <div class="tool__preview">
-          <p>Format preview:</p>
-          <img class="img_preview" src="/images/tile1.png" alt="" />
-        </div>
-
-        <div class="tool__sizes">
-          <p>Finally, Choose the resolution of your screen in pixels:</p>
-          <div class="tool__radios">
-            <input type="radio" name="" id="600" />
-            <label for="600">600 x 800</label>
-            <input type="radio" name="" id="1024" />
-            <label for="1024">1024 x 768</label>
-            <input type="radio" name="" id="1920" />
-            <label for="1920">1920 x 1080</label>
-          </div>
-        </div>
-
-        <div class="tool___footer">
-          <button class="btn btn-grad-secondary" type="submit">Reset</button>
-          <button class="btn btn-grad" type="submit" focus>Generate</button>
-          <button class="btn btn-grad-secondary" type="submit">Close</button>
-        </div>
-      </div>
+      </main>
     </div>
-    <footer class="footer footer-light">
-      <p>
-        This is an Open Source Project made by Julian C. |
-        <a
-          href="https://github.com/julian-c-dev/web_project--Productivity_desktops"
-        >
-          Github</a
-        >
-        | julian.c.dev@gmail.com
-      </p>
-      <p>Customize Productivity Desktop Wallpaper Tool - 2021</p>
-    </footer>
 
     <script src="/app/js/main.js"></script>
     <script src="/app/js/functions.js"></script>

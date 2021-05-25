@@ -1,0 +1,58 @@
+::placeholder {
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  color: $light-slate;
+}
+
+.container {
+  min-width: 360px;
+  position: relative;
+}
+
+.banner,
+.footer {
+  padding: 2rem 0;
+  background-color: $lightest-navy;
+}
+
+.footer {
+  padding: 0.5rem 0;
+  text-align: center;
+  font: 1.2rem sans-serif;
+  line-height: 0.5;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $lightest-slate;
+    text-decoration: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/*Responsive elements and classes*/
+
+@media screen and(min-width:480px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+}
+@media screen and(min-width:768px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+}
+
+@media screen and(min-width:375px) {
+  .tool__content {
+    font-size: 1.8rem;
+  }
+}
