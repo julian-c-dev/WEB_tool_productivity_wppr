@@ -1,7 +1,23 @@
-.grey {
-  color: $dark-slate;
-
-  &-hidden {
-    color: $light-slate;
+.icon {
+  &-active {
+    color: $green;
   }
+
+  &-disable {
+    color: $dark-slate;
+  }
+
+  &-hide {
+    visibility: hidden;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-right: 1rem;
+  background-color: $green-tint;
+  border-radius: 50px;
+  border: 1px solid $green;
 }

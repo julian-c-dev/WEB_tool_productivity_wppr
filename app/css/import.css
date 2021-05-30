@@ -405,6 +405,16 @@ li {
   background-color: #233554;
 }
 
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
 .footer {
   padding: 0.5rem 0;
   text-align: center;
@@ -426,6 +436,13 @@ li {
 
 .hide {
   display: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s 3s, opacity 0.1s linear;
+  transition: visibility 0s 3s, opacity 0.1s linear;
 }
 
 /*Responsive elements and classes*/
@@ -525,12 +542,30 @@ li {
   display: flex;
 }
 
-.grey {
+.icon-active {
+  color: #62ffda;
+}
+
+.icon-disable {
   color: #495670;
 }
 
-.grey-hidden {
-  color: #a8b2d1;
+.icon-hide {
+  visibility: hidden;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin-right: 1rem;
+  background-color: rgba(100, 255, 218, 0.1);
+  border-radius: 50px;
+  border: 1px solid #62ffda;
 }
 
 .tool {
