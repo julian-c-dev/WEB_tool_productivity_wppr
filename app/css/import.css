@@ -445,6 +445,30 @@ li {
   transition: visibility 0s 3s, opacity 0.1s linear;
 }
 
+.tilesContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr 1fr)[1];
+      grid-template-columns: repeat(1, 1fr 1fr);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  z-index: 99;
+}
+
+.tile {
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  font-family: "Courgette";
+  font-size: 3rem;
+  height: 350px;
+  margin: 2rem;
+  opacity: 0.2;
+  padding: 3rem;
+  width: 700px;
+}
+
 /*Responsive elements and classes*/
 @media screen and (min-width: 480px) {
   h1 {
@@ -540,6 +564,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 2rem;
 }
 
 .icon-active {
@@ -569,11 +594,13 @@ li {
 }
 
 .tool {
+  z-index: 999;
   background-color: #a8b2d1;
   border-radius: 25px;
   -webkit-box-shadow: 0 0 8px #62ffda;
           box-shadow: 0 0 8px #62ffda;
   margin: 3rem;
+  display: inline-block;
 }
 
 @media screen and (min-width: 410px) {
@@ -706,7 +733,7 @@ li {
 }
 
 .tool__tiles .tool__input-tiles input {
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
   border: none;
   outline: none;
   border-radius: 5px;

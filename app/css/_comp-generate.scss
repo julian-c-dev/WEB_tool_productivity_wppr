@@ -1,8 +1,10 @@
 .tool {
+  z-index: 999;
   background-color: $light-slate;
   border-radius: 25px;
   box-shadow: 0 0 8px $green;
   margin: 3rem;
+  display: inline-block;
 }
 
 @media screen and(min-width:410px) {
@@ -13,7 +15,7 @@
 @media screen and(min-width:768px) {
   .tool {
     margin: 5rem 16rem;
-  }
+  }+, 
 }
 
 .tool__content {
@@ -100,7 +102,7 @@
       }
     }
     input {
-      margin-bottom: 0.2rem;
+      margin-bottom: 1rem;
       border: none;
       outline: none;
       border-radius: 5px;

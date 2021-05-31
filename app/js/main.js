@@ -1,6 +1,8 @@
 // This code stinks, I know, it was the first approach (I am learning), It needs to become DRY.
 
-// 1. Selection background.
+/* 
+  & Selection background
+*/
 
 const selectionColor1 = document.querySelector(".select1");
 const selectionColor2 = document.querySelector(".select2");
@@ -47,38 +49,6 @@ selectionColor6.onclick = () => {
     "linear-gradient(to right, #434343 0%, black 100%)";
 };
 
-// 2. Adding Tiles function (remove disable):
-
-/*
- ! when click on an activated iconPlus  => remove disable attr of the input field.
-*/
-let iconActivated = document.getElementsByClassName("icon-active");
-const firstInputDisable = document.querySelectorAll("input[disabled]");
-const iconPlus = document.getElementsByClassName("fa-plus-circle");
-
-iconActivated[0].addEventListener("click", removeDisable, true);
-iconActivated[0].addEventListener("click", removeIcon, true);
-iconActivated[0].addEventListener("click", nextIcon, true);
-
-function removeDisable() {
-  firstInputDisable[0].removeAttribute("disabled");
-}
-function removeIcon() {
-  iconActivated[0].remove();
-}
-function nextIcon() {
-  iconPlus[0].classList.remove("icon-disable");
-  iconPlus[0].classList.add("icon-active");
-}
-
-/*
-
-
-
-// Generate function:
-// Swap footer depends of Background Selection
-*/
-
 /* 
  & Preview function:
 */
@@ -97,3 +67,35 @@ function previewOut() {
   caughtIcon[0].classList.toggle("hidden");
   caughtTool[0].classList.remove("hidden");
 }
+
+/* Adding Tiles */
+const getMain = document.getElementById("main");
+const mainContainer = document.createElement("div");
+const firstTile = document.createElement("div");
+const secondTile = document.createElement("div");
+const thirdTile = document.createElement("div");
+const fourthTile = document.createElement("div");
+let title1 = "this is a test";
+
+getMain.prepend(mainContainer);
+mainContainer.classList.add("tilesContainer");
+
+// adding tiles to container DOM
+mainContainer.append(firstTile);
+firstTile.classList.add("tile");
+firstTile.innerText = title1;
+mainContainer.append(secondTile);
+secondTile.classList.add("tile");
+secondTile.innerText = "Title 2";
+mainContainer.append(thirdTile);
+thirdTile.classList.add("tile");
+thirdTile.innerText = "Title 3";
+mainContainer.append(fourthTile);
+fourthTile.classList.add("tile");
+fourthTile.innerText = "Title 4";
+
+const iconDisable = document.getElementsByClassName("icon-disable");
+
+iconDisable[0].addEventListener("click", addTile1, false);
+
+function addTile1(title1) {}

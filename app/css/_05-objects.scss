@@ -49,6 +49,27 @@
   transition: visibility 0s 3s, opacity 0.1s linear;
 }
 
+.tilesContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 1fr);
+  align-content: center;
+  justify-items: center;
+  z-index: 99;
+}
+
+.tile {
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  font-family: "Courgette";
+  font-size: 3rem;
+  height: 350px;
+  margin: 2rem;
+  opacity: 0.2;
+  padding: 3rem;
+  width: 700px;
+}
+
 /*Responsive elements and classes*/
 
 @media screen and(min-width:480px) {
