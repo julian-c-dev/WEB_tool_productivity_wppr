@@ -49,9 +49,7 @@ selectionColor6.onclick = () => {
     "linear-gradient(to right, #434343 0%, black 100%)";
 };
 
-/* 
- & Preview function:
-*/
+// & Preview function:
 
 const caughtTool = document.getElementsByClassName("tool");
 const caughtIcon = document.getElementsByClassName("wrapper");

@@ -49,12 +49,22 @@
   transition: visibility 0s 3s, opacity 0.1s linear;
 }
 
+.main {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.main .tool,
+.main .tilesContainer {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
 .tilesContainer {
   display: grid;
   grid-template-columns: repeat(1, 1fr 1fr);
   align-content: center;
   justify-items: center;
-  z-index: 99;
 }
 
 .tile {

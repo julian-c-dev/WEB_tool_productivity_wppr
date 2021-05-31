@@ -445,6 +445,21 @@ li {
   transition: visibility 0s 3s, opacity 0.1s linear;
 }
 
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+}
+
+.main .tool,
+.main .tilesContainer {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
 .tilesContainer {
   display: -ms-grid;
   display: grid;
@@ -453,7 +468,6 @@ li {
   -ms-flex-line-pack: center;
       align-content: center;
   justify-items: center;
-  z-index: 99;
 }
 
 .tile {
@@ -599,7 +613,7 @@ li {
   border-radius: 25px;
   -webkit-box-shadow: 0 0 8px #62ffda;
           box-shadow: 0 0 8px #62ffda;
-  margin: 3rem;
+  margin: 2rem;
   display: inline-block;
 }
 
@@ -611,7 +625,7 @@ li {
 
 @media screen and (min-width: 768px) {
   .tool {
-    margin: 5rem 16rem;
+    margin: 5rem 40rem;
   }
 }
 
