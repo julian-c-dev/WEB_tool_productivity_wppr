@@ -51,7 +51,7 @@
 
 .main {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
 }
 
 .main .tool,
@@ -67,6 +67,23 @@
   justify-items: center;
 }
 
+@media screen and(min-width:410px) {
+  .tilesContainer {
+    width: 100vw;
+  }
+}
+@media screen and(min-width:768px) {
+  .tilesContainer {
+    width: 100vw;
+  }
+}
+
+@media screen and(min-width:1024px) {
+  .tilesContainer {
+    width: 100vw;
+  }
+}
+
 .tile {
   background-color: white;
   border-radius: 50px;
@@ -78,23 +95,4 @@
   opacity: 0.2;
   padding: 3rem;
   width: 700px;
-}
-
-/*Responsive elements and classes*/
-
-@media screen and(min-width:480px) {
-  h1 {
-    font-size: 3.6rem;
-  }
-}
-@media screen and(min-width:768px) {
-  h1 {
-    font-size: 4.6rem;
-  }
-}
-
-@media screen and(min-width:375px) {
-  .tool__content {
-    font-size: 1.8rem;
-  }
 }
