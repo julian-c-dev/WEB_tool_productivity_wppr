@@ -3,25 +3,13 @@
   background-color: $light-slate;
   border-radius: 25px;
   box-shadow: 0 0 8px $green;
-  margin: 2rem;
+  margin: 2rem auto;
   display: inline-block;
-}
-
-@media screen and(min-width:410px) {
-  .tool {
-    margin: 5rem;
-  }
-}
-@media screen and(min-width:768px) {
-  .tool {
-    margin: 5rem 40rem;
-  }
 }
 
 .tool__content {
   color: $lightest-navy;
   font-family: "Open Sans";
-
   padding: 2rem;
   display: flex;
   flex-flow: column wrap;
@@ -81,7 +69,7 @@
       height: 8rem;
     }
   }
-  @media screen and(min-width:769px) {
+  @media screen and(min-width:900px) {
     .tool__selection {
       width: 12rem;
       height: 12rem;

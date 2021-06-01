@@ -1,8 +1,6 @@
 // This code stinks, I know, it was the first approach (I am learning), It needs to become DRY.
 
-/* 
-  & Selection background
-*/
+//  & Selection background
 
 const selectionColor1 = document.querySelector(".select1");
 const selectionColor2 = document.querySelector(".select2");
@@ -66,7 +64,22 @@ function previewOut() {
   caughtTool[0].classList.remove("hidden");
 }
 
-/* Adding Tiles */
+// & Generate function:
+
+const wallpaper_obj = document.querySelector("#generate");
+
+wallpaper_obj.onclick = () => {
+  let user_wallpaper = {
+    id: Math.random(1, 100),
+    background: "selectionColor1.value",
+    tiles: "tiles.value",
+    tiles_titles: [],
+    resolution: "resolution.value",
+  };
+  alert(JSON.stringify(user_wallpaper));
+};
+
+/* Adding Tiles 
 const getMain = document.getElementById("main");
 const mainContainer = document.createElement("div");
 const firstTile = document.createElement("div");
@@ -92,8 +105,4 @@ mainContainer.append(fourthTile);
 fourthTile.classList.add("tile");
 fourthTile.innerText = "Title 4";
 
-const iconDisable = document.getElementsByClassName("icon-disable");
-
-iconDisable[0].addEventListener("click", addTile1, false);
-
-function addTile1(title1) {}
+const iconDisable = document.getElementsByClassName("icon-disable");*/

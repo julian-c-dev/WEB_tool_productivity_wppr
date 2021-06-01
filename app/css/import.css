@@ -356,6 +356,24 @@ h1 {
   font-size: 2.6rem;
 }
 
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .tool__content {
+    font-size: 1.8rem;
+  }
+}
+
 span {
   color: #62ffda;
   text-shadow: 0 0 15px pink;
@@ -448,8 +466,8 @@ li {
 .main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .main .tool,
@@ -470,6 +488,24 @@ li {
   justify-items: center;
 }
 
+@media screen and (min-width: 410px) {
+  .tilesContainer {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tilesContainer {
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tilesContainer {
+    width: 100vw;
+  }
+}
+
 .tile {
   background-color: white;
   border-radius: 50px;
@@ -481,25 +517,6 @@ li {
   opacity: 0.2;
   padding: 3rem;
   width: 700px;
-}
-
-/*Responsive elements and classes*/
-@media screen and (min-width: 480px) {
-  h1 {
-    font-size: 3.6rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 4.6rem;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .tool__content {
-    font-size: 1.8rem;
-  }
 }
 
 .btn {
@@ -613,20 +630,8 @@ li {
   border-radius: 25px;
   -webkit-box-shadow: 0 0 8px #62ffda;
           box-shadow: 0 0 8px #62ffda;
-  margin: 2rem;
+  margin: 2rem auto;
   display: inline-block;
-}
-
-@media screen and (min-width: 410px) {
-  .tool {
-    margin: 5rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .tool {
-    margin: 5rem 40rem;
-  }
 }
 
 .tool__content {
@@ -719,7 +724,7 @@ li {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
   .tool__screens .tool__selection {
     width: 12rem;
     height: 12rem;
