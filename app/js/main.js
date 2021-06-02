@@ -79,30 +79,51 @@ wallpaper_obj.onclick = () => {
   alert(JSON.stringify(user_wallpaper));
 };
 
-/* Adding Tiles 
+// & Adding Tiles & Titles
 const getMain = document.getElementById("main");
 const mainContainer = document.createElement("div");
-const firstTile = document.createElement("div");
-const secondTile = document.createElement("div");
-const thirdTile = document.createElement("div");
-const fourthTile = document.createElement("div");
-let title1 = "this is a test";
 
 getMain.prepend(mainContainer);
 mainContainer.classList.add("tilesContainer");
 
-// adding tiles to container DOM
-mainContainer.append(firstTile);
-firstTile.classList.add("tile");
-firstTile.innerText = title1;
-mainContainer.append(secondTile);
-secondTile.classList.add("tile");
-secondTile.innerText = "Title 2";
-mainContainer.append(thirdTile);
-thirdTile.classList.add("tile");
-thirdTile.innerText = "Title 3";
-mainContainer.append(fourthTile);
-fourthTile.classList.add("tile");
-fourthTile.innerText = "Title 4";
+const dom1Tile = document.createElement("div");
+const dom2Tile = document.createElement("div");
+const dom3Tile = document.createElement("div");
+const dom4Tile = document.createElement("div");
 
-const iconDisable = document.getElementsByClassName("icon-disable");*/
+const icon1Tile = document.getElementById("iconTile1");
+const icon2Tile = document.getElementById("iconTile2");
+const icon3Tile = document.getElementById("iconTile3");
+const icon4Tile = document.getElementById("iconTile4");
+
+icon1Tile.onclick = () => {
+  mainContainer.append(dom1Tile);
+  dom1Tile.classList.add("tile");
+  const input1Tile = document.querySelector("#tile1");
+  valueInput1Tile = input1Tile.value;
+  dom1Tile.innerText = valueInput1Tile;
+};
+
+icon2Tile.onclick = () => {
+  mainContainer.append(dom2Tile);
+  dom2Tile.classList.add("tile");
+  const input2Tile = document.querySelector("#tile2");
+  valueInput2Tile = input2Tile.value;
+  dom2Tile.innerText = valueInput2Tile;
+};
+
+icon3Tile.onclick = () => {
+  mainContainer.append(dom3Tile);
+  dom3Tile.classList.add("tile");
+  const input3Tile = document.querySelector("#tile3");
+  valueInput3Tile = input3Tile.value;
+  dom3Tile.innerText = valueInput3Tile;
+};
+
+icon4Tile.onclick = () => {
+  mainContainer.append(dom4Tile);
+  dom4Tile.classList.add("tile");
+  const input4Tile = document.querySelector("#tile4");
+  valueInput4Tile = input4Tile.value;
+  dom4Tile.innerText = valueInput4Tile;
+};

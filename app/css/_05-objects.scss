@@ -18,6 +18,7 @@
 .banner {
   display: flex;
   flex-flow: row wrap;
+  width: auto;
 }
 
 .footer {
@@ -65,23 +66,6 @@
   grid-template-columns: repeat(1, 1fr 1fr);
   align-content: center;
   justify-items: center;
-}
-
-@media screen and(min-width:410px) {
-  .tilesContainer {
-    width: 100vw;
-  }
-}
-@media screen and(min-width:768px) {
-  .tilesContainer {
-    width: 100vw;
-  }
-}
-
-@media screen and(min-width:1024px) {
-  .tilesContainer {
-    width: 100vw;
-  }
 }
 
 .tile {
