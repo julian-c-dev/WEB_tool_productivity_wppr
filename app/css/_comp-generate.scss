@@ -5,6 +5,7 @@
   box-shadow: 0 0 8px $green;
   margin: 2rem auto;
   display: inline-block;
+  max-height: 627px;
 }
 
 .tool__content {
@@ -77,6 +78,15 @@
   }
 }
 
+.tool__fonts {
+  @extend %inputs;
+  margin: 1rem;
+  select {
+    padding: 0.3rem;
+    width: 21rem;
+  }
+}
+
 .tool__tiles {
   .tool__input-tiles {
     display: flex;
@@ -89,15 +99,7 @@
         font-weight: bold;
       }
     }
-    input {
-      margin-bottom: 1rem;
-      border: none;
-      outline: none;
-      border-radius: 5px;
-      &:focus {
-        background-color: $green;
-      }
-    }
+    @extend %inputs;
   }
 }
 

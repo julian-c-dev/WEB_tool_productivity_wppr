@@ -1,4 +1,20 @@
 /* Mixins*/
+/* Extend*/
+.tool__fonts input, .tool__tiles .tool__input-tiles input,
+.tool__fonts select,
+.tool__tiles .tool__input-tiles select {
+  margin-bottom: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.tool__fonts input:focus, .tool__tiles .tool__input-tiles input:focus,
+.tool__fonts select:focus,
+.tool__tiles .tool__input-tiles select:focus {
+  background-color: #62ffda;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -345,33 +361,17 @@ html {
 
 body {
   color: #a8b2d1;
+  background-size: 100vw 130vh;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a6c1ee));
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  background-repeat: no-repeat;
 }
 
 h1 {
   text-align: center;
   margin: 0 auto;
   font-family: "Courgette";
-  font-size: 2.6rem;
-}
-
-@media screen and (min-width: 480px) {
-  h1 {
-    font-size: 2.6rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 4.6rem;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .tool__content {
-    font-size: 1.8rem;
-  }
+  font-size: 4.8rem;
 }
 
 span {
@@ -413,7 +413,7 @@ li {
 }
 
 .container {
-  min-width: 360px;
+  min-width: 1200px;
   position: relative;
 }
 
@@ -431,7 +431,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  width: auto;
+  width: 100%;
 }
 
 .footer {
@@ -578,7 +578,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .icon-active {
@@ -594,17 +594,17 @@ li {
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 1rem;
   padding: 10px;
   margin-right: 1rem;
-  background-color: rgba(100, 255, 218, 0.1);
+  background-color: #62ffda;
   border-radius: 50px;
   border: 1px solid #62ffda;
+  position: fixed;
+  bottom: 0;
 }
 
 .tool {
@@ -615,6 +615,7 @@ li {
           box-shadow: 0 0 8px #62ffda;
   margin: 2rem auto;
   display: inline-block;
+  max-height: 627px;
 }
 
 .tool__content {
@@ -714,6 +715,15 @@ li {
   }
 }
 
+.tool__fonts {
+  margin: 1rem;
+}
+
+.tool__fonts select {
+  padding: 0.3rem;
+  width: 21rem;
+}
+
 .tool__tiles .tool__input-tiles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -732,17 +742,6 @@ li {
 
 .tool__tiles .tool__input-tiles label:focus {
   font-weight: bold;
-}
-
-.tool__tiles .tool__input-tiles input {
-  margin-bottom: 1rem;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
-
-.tool__tiles .tool__input-tiles input:focus {
-  background-color: #62ffda;
 }
 
 @media screen and (min-width: 460px) {

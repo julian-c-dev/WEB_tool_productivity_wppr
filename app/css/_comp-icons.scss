@@ -13,11 +13,13 @@
 }
 
 .wrapper {
-  display: flex;
   align-items: center;
+  margin: 1rem;
   padding: 10px;
   margin-right: 1rem;
-  background-color: $green-tint;
+  background-color: $green;
   border-radius: 50px;
   border: 1px solid $green;
+  position: fixed;
+  bottom: 0;
 }

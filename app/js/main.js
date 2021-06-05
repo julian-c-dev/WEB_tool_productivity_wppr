@@ -12,21 +12,25 @@ const selectionColor6 = document.querySelector(".select6");
 selectionColor1.onclick = () => {
   document.body.style.background =
     "linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)";
+  document.body.style.backgroundSize = "100vw 130vh";
 };
 
 selectionColor2.onclick = () => {
   document.body.style.background =
     "linear-gradient(to top, #30cfd0 0%, #330867 100%)";
+  document.body.style.backgroundSize = "100vw 130vh";
 };
 
 selectionColor3.onclick = () => {
   document.body.style.background =
     "linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)";
+  document.body.style.backgroundSize = "100vw 130vh";
 };
 
 selectionColor4.onclick = () => {
   document.body.style.background =
     "linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)";
+  document.body.style.backgroundSize = "100vw 130vh";
 };
 
 selectionColor5.onclick = () => {
@@ -40,20 +44,24 @@ selectionColor5.onclick = () => {
         #3d1635 84%,
         #1c1a27 100%
       )`;
+  document.body.style.backgroundSize = "100vw 130vh";
 };
 
 selectionColor6.onclick = () => {
   document.body.style.background =
     "linear-gradient(to right, #434343 0%, black 100%)";
+  document.body.style.backgroundSize = "100vw 130vh";
 };
 
 // & Preview function:
 
 const caughtTool = document.getElementsByClassName("tool");
 const caughtIcon = document.getElementsByClassName("wrapper");
+const caugthBanner = document.getElementsByClassName("banner");
 
 function previewIn() {
   caughtTool[0].classList.toggle("hidden");
+  caugthBanner[0].classList.toggle("hide");
   caughtIcon[0].classList.remove("hidden");
 }
 
@@ -62,6 +70,7 @@ caughtIcon[0].addEventListener("click", previewOut, false);
 function previewOut() {
   caughtIcon[0].classList.toggle("hidden");
   caughtTool[0].classList.remove("hidden");
+  caugthBanner[0].classList.toggle("hide");
 }
 
 // & Generate function:

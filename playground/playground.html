@@ -19,18 +19,15 @@
   </head>
   <body>
     <div class="container">
-      <!--Begin Banner-->
       <header class="banner">
         <h1><span>Productivity</span> Desktop <span>Wallpaper</span> Tool</h1>
-        <div class="wrapper hidden"><i class="fas fa-cog fa-3x"></i></div>
       </header>
-      <!--End Banner-->
-
       <!--Begin Main-->
       <main id="main" class="main">
         <!--Background tiles code by JS-->
         <div id="tool" class="tool">
-          <form action="" class="tool__content">
+          <div action="" class="tool__content">
+            <!-- ~ section: BACKGROUND -->
             <p>
               <span>1 - </span> Select your favorite background from the
               following options:
@@ -43,60 +40,74 @@
               <li><div class="tool__selection select5"></div></li>
               <li><div class="tool__selection select6"></div></li>
             </ul>
+            <!-- ~ section: TILES -->
             <p>
-              <span>2 - </span>Type your custom title to each tile you wanna
-              add:
+              <span>2 - </span>Type your custom title and add it by clicking on
+              the "plus" icon:
             </p>
             <div class="tool__tiles">
               <div class="tool__input-tiles">
-                <div class="input-tiles-group">
+                <div>
                   <label for="tile1">Tile 1</label>
                   <input
                     type="search"
                     name="tile1"
                     id="tile1"
                     maxlength="20"
-                    placeholder="first title "
+                    placeholder="your titles here... "
                   />
                   <i id="iconTile1" class="fas fa-plus-circle"></i>
                 </div>
-                <div class="input-tiles-group">
+                <div>
                   <label for="tile2">Tile 2</label>
                   <input
                     type="search"
                     name="tile2"
                     id="tile2"
                     maxlength="20"
-                    placeholder="second title"
+                    placeholder="..."
                   />
                   <i id="iconTile2" class="fas fa-plus-circle"></i>
                 </div>
-                <div class="input-tiles-group">
+                <div>
                   <label for="tile3">Tile 3</label>
                   <input
                     type="search"
                     name="tile3"
                     id="tile3"
                     maxlength="20"
-                    placeholder="third title "
+                    placeholder="... "
                   />
                   <i id="iconTile3" class="fas fa-plus-circle"></i>
                 </div>
-                <div id="input4" class="input-tiles-group">
+                <div>
                   <label for="tile4">Tile 4</label>
                   <input
                     type="search"
                     name="tile4"
                     id="tile4"
                     maxlength="20"
-                    placeholder="fourth title"
+                    placeholder="(max 20 characters)"
                   />
                   <i id="iconTile4" class="fas fa-plus-circle"></i>
                 </div>
               </div>
             </div>
+            <!-- ~ section: FONTS -->
             <p>
-              <span>3 - </span> Choose the resolution of your screen in pixels:
+              <span>3 - </span> Select a beautiful font family for your
+              customize titles:
+            </p>
+            <div class="tool__fonts">
+              <select>
+                <option value="Font1">Times new Roman</option>
+                <option value="Font2">Verdana</option>
+                <option value="Font3">San Serif</option>
+              </select>
+            </div>
+            <!-- ~ section: RESOLUTION -->
+            <p>
+              <span>4 - </span> Choose the resolution of your screen in pixels:
             </p>
             <div class="tool__sizes">
               <div class="tool__radios">
@@ -114,6 +125,7 @@
                 </div>
               </div>
             </div>
+            <!-- ~ section: BUTTONS -->
             <div class="groupBtn">
               <button
                 type="button"
@@ -123,17 +135,16 @@
               >
                 Preview
               </button>
-              <button class="btn btn-grad-secondary" type="submit">
-                Reset
+              <button id="generate" class="btn btn-grad" type="submit" focus>
+                Generate
               </button>
+              <button class="btn btn-grad-secondary" type="reset">Reset</button>
             </div>
-            <button id="generate" class="btn btn-grad" type="submit" focus>
-              Generate
-            </button>
-          </form>
+          </div>
         </div>
       </main>
     </div>
+    <div class="wrapper hidden"><i class="fas fa-cog fa-3x"></i></div>
 
     <script src="/app/js/main.js"></script>
   </body>
