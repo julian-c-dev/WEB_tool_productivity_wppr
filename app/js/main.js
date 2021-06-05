@@ -136,3 +136,9 @@ icon4Tile.onclick = () => {
   valueInput4Tile = input4Tile.value;
   dom4Tile.innerText = valueInput4Tile;
 };
+
+// & Btn Reset
+const btnReset = document.getElementById("reset");
+btnReset.onclick = () => {
+  window.location.reload();
+};
