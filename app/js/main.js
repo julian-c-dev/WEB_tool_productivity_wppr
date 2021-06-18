@@ -53,17 +53,48 @@ selectionColor6.onclick = () => {
   document.body.style.backgroundSize = "100vw 130vh";
 };
 
-// & Adding Tiles & Titles
+//  & Selection NUMBER of TILES (2 or 4)
+const caugthSelectTwo = document.querySelector(".selectTwo");
+const caugthSelectFour = document.querySelector(".selectFour");
 const getMain = document.getElementById("main");
 const mainContainer = document.createElement("div");
-
 getMain.prepend(mainContainer);
 mainContainer.classList.add("tilesContainer");
 
-const dom1Tile = document.createElement("div");
-const dom2Tile = document.createElement("div");
-const dom3Tile = document.createElement("div");
-const dom4Tile = document.createElement("div");
+const domTwo1Tile = document.createElement("div");
+const domTwo2Tile = document.createElement("div");
+
+const domFour1Tile = document.createElement("div");
+const domFour2Tile = document.createElement("div");
+const domFour3Tile = document.createElement("div");
+const domFour4Tile = document.createElement("div");
+
+caugthSelectTwo.onclick = () => {
+  mainContainer.append(domTwo1Tile);
+  mainContainer.append(domTwo2Tile);
+  domFour1Tile.classList.toggle("tile-small");
+  domFour2Tile.classList.toggle("tile-small");
+  domFour3Tile.classList.toggle("tile-small");
+  domFour4Tile.classList.toggle("tile-small");
+  domTwo1Tile.classList.add("tile-big");
+  domTwo2Tile.classList.add("tile-big");
+};
+
+caugthSelectFour.onclick = () => {
+  mainContainer.append(domFour1Tile);
+  mainContainer.append(domFour2Tile);
+  mainContainer.append(domFour3Tile);
+  mainContainer.append(domFour4Tile);
+  domTwo1Tile.classList.toggle("tile-big");
+  domTwo2Tile.classList.toggle("tile-big");
+  domFour1Tile.classList.add("tile-small");
+  domFour2Tile.classList.add("tile-small");
+  domFour3Tile.classList.add("tile-small");
+  domFour4Tile.classList.add("tile-small");
+};
+
+/*// & Adding TITLES to TILES
+
 
 const icon1Tile = document.getElementById("iconTile1");
 const icon2Tile = document.getElementById("iconTile2");
@@ -104,7 +135,7 @@ icon4Tile.onclick = () => {
   valueInput4Tile = input4Tile.value;
   dom4Tile.innerText = valueInput4Tile;
   iconTile4.classList.add("green");
-};
+};*/
 
 // & Select Fonts
 const getFont = document.getElementById("fonts");
