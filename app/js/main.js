@@ -53,41 +53,6 @@ selectionColor6.onclick = () => {
   document.body.style.backgroundSize = "100vw 130vh";
 };
 
-// & Preview function:
-
-const caughtTool = document.getElementsByClassName("tool");
-const caughtIcon = document.getElementsByClassName("wrapper");
-const caugthBanner = document.getElementsByClassName("banner");
-
-function previewIn() {
-  caughtTool[0].classList.toggle("hidden");
-  caugthBanner[0].classList.toggle("hide");
-  caughtIcon[0].classList.remove("hidden");
-}
-
-caughtIcon[0].addEventListener("click", previewOut, false);
-
-function previewOut() {
-  caughtIcon[0].classList.toggle("hidden");
-  caughtTool[0].classList.remove("hidden");
-  caugthBanner[0].classList.toggle("hide");
-}
-
-// & Generate function:
-
-const wallpaper_obj = document.querySelector("#generate");
-
-wallpaper_obj.onclick = () => {
-  let user_wallpaper = {
-    id: Math.random(1, 100),
-    background: "selectionColor1.value",
-    tiles: "tiles.value",
-    tiles_titles: [],
-    resolution: "resolution.value",
-  };
-  alert(JSON.stringify(user_wallpaper));
-};
-
 // & Adding Tiles & Titles
 const getMain = document.getElementById("main");
 const mainContainer = document.createElement("div");
@@ -111,6 +76,7 @@ icon1Tile.onclick = () => {
   const input1Tile = document.querySelector("#tile1");
   valueInput1Tile = input1Tile.value;
   dom1Tile.innerText = valueInput1Tile;
+  iconTile1.classList.add("green");
 };
 
 icon2Tile.onclick = () => {
@@ -119,6 +85,7 @@ icon2Tile.onclick = () => {
   const input2Tile = document.querySelector("#tile2");
   valueInput2Tile = input2Tile.value;
   dom2Tile.innerText = valueInput2Tile;
+  iconTile2.classList.add("green");
 };
 
 icon3Tile.onclick = () => {
@@ -127,6 +94,7 @@ icon3Tile.onclick = () => {
   const input3Tile = document.querySelector("#tile3");
   valueInput3Tile = input3Tile.value;
   dom3Tile.innerText = valueInput3Tile;
+  iconTile3.classList.add("green");
 };
 
 icon4Tile.onclick = () => {
@@ -135,6 +103,59 @@ icon4Tile.onclick = () => {
   const input4Tile = document.querySelector("#tile4");
   valueInput4Tile = input4Tile.value;
   dom4Tile.innerText = valueInput4Tile;
+  iconTile4.classList.add("green");
+};
+
+// & Select Fonts
+const getFont = document.getElementById("fonts");
+const getTiles = document.getElementsByClassName("tile");
+if (getFont === "font1") {
+  getTiles.classList.toggle("tile-sansSerif");
+}
+if (getFont === "font2") {
+  getTiles.classList.toggle("tile-serif");
+}
+if (getFont === "font3") {
+  getTiles.classList.toggle("tile-mono");
+}
+
+console.log(getTiles);
+
+// ~ BUTTONS ~
+
+// & Preview function:
+
+const caughtTool = document.getElementsByClassName("tool");
+const caughtIcon = document.getElementsByClassName("wrapper");
+const caugthBanner = document.getElementsByClassName("banner");
+
+function previewIn() {
+  caughtTool[0].classList.toggle("hidden");
+  caugthBanner[0].classList.toggle("hide");
+  caughtIcon[0].classList.remove("hidden");
+}
+
+caughtIcon[0].addEventListener("click", previewOut, false);
+
+function previewOut() {
+  caughtIcon[0].classList.toggle("hidden");
+  caugthBanner[0].classList.toggle("hide");
+  caughtTool[0].classList.remove("hidden");
+}
+
+// & Generate function (download button):
+
+const wallpaper_obj = document.querySelector("#generate");
+
+wallpaper_obj.onclick = () => {
+  let user_wallpaper = {
+    id: Math.random(1, 100),
+    background: "selectionColor1.value",
+    tiles: "tiles.value",
+    tiles_titles: [],
+    resolution: "resolution.value",
+  };
+  alert(JSON.stringify(user_wallpaper));
 };
 
 // & Btn Reset

@@ -40,10 +40,12 @@
               <li><div class="tool__selection select5"></div></li>
               <li><div class="tool__selection select6"></div></li>
             </ul>
-            <!-- ~ section: TILES -->
+
+            <!-- ~ section: TITLES_TILES -->
             <p>
-              <span>2 - </span>Type your custom title and add it by clicking on
-              the "plus" icon:
+              <span>2 - </span>Type the titles for your tiles and add them by
+              clicking on the
+              <span style="font-style: italic">plus</span>&nbsp;icon:
             </p>
             <div class="tool__tiles">
               <div class="tool__input-tiles">
@@ -93,18 +95,22 @@
                 </div>
               </div>
             </div>
+
             <!-- ~ section: FONTS -->
             <p>
-              <span>3 - </span> Select a beautiful font family for your
-              customize titles:
+              <span>3 - </span> Select a beautiful font family for your tiles
+              titles:
             </p>
             <div class="tool__fonts">
-              <select>
-                <option value="Font1">Times new Roman</option>
-                <option value="Font2">Verdana</option>
-                <option value="Font3">San Serif</option>
+              <select id="fonts">
+                <option for="fonts" value="font1" name="font">
+                  Sans-Serif
+                </option>
+                <option for="fonts" value="font2" name="font">Serif</option>
+                <option for="fonts" value="font3" name="font">Monospace</option>
               </select>
             </div>
+
             <!-- ~ section: RESOLUTION -->
             <p>
               <span>4 - </span> Choose the resolution of your screen in pixels:
@@ -112,15 +118,15 @@
             <div class="tool__sizes">
               <div class="tool__radios">
                 <div class="radio-group">
-                  <input type="radio" name="" id="600" />
+                  <input type="radio" name="radAnswer" id="600" />
                   <label for="600">600 x 800</label>
                 </div>
                 <div class="radio-group">
-                  <input type="radio" name="" id="1024" />
+                  <input type="radio" name="radAnswer" id="1024" />
                   <label for="1024">1024 x 768</label>
                 </div>
                 <div class="radio-group">
-                  <input type="radio" name="" id="1920" />
+                  <input type="radio" name="radAnswer" id="1920" />
                   <label for="1920">1920 x 1080</label>
                 </div>
               </div>
@@ -136,7 +142,7 @@
                 Preview
               </button>
               <button id="generate" class="btn btn-grad" type="submit" focus>
-                Generate
+                Download
               </button>
               <button class="btn btn-grad-secondary" id="reset">Reset</button>
             </div>

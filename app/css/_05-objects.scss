@@ -1,5 +1,7 @@
 ::placeholder {
   font-size: 1.1rem;
+
+  font-family: "Courgette";
   padding-left: 1rem;
   color: $light-slate;
 }
@@ -79,4 +81,18 @@
   opacity: 0.2;
   padding: 3rem;
   width: 700px;
+  &-serif {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  &-mono {
+    font-family: monospace;
+  }
+  &-sansSerif {
+    font-family: "Courgette";
+  }
+}
+
+.green {
+  color: $green;
 }

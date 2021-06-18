@@ -388,26 +388,34 @@ li {
   margin: 1rem;
 }
 
+input {
+  padding: 0.5rem;
+}
+
 ::-webkit-input-placeholder {
   font-size: 1.1rem;
+  font-family: "Courgette";
   padding-left: 1rem;
   color: #a8b2d1;
 }
 
 :-ms-input-placeholder {
   font-size: 1.1rem;
+  font-family: "Courgette";
   padding-left: 1rem;
   color: #a8b2d1;
 }
 
 ::-ms-input-placeholder {
   font-size: 1.1rem;
+  font-family: "Courgette";
   padding-left: 1rem;
   color: #a8b2d1;
 }
 
 ::placeholder {
   font-size: 1.1rem;
+  font-family: "Courgette";
   padding-left: 1rem;
   color: #a8b2d1;
 }
@@ -500,6 +508,22 @@ li {
   opacity: 0.2;
   padding: 3rem;
   width: 700px;
+}
+
+.tile-serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.tile-mono {
+  font-family: monospace;
+}
+
+.tile-sansSerif {
+  font-family: "Courgette";
+}
+
+.green {
+  color: #62ffda;
 }
 
 .btn {
@@ -716,12 +740,12 @@ li {
 }
 
 .tool__fonts {
-  margin: 1rem;
+  margin: 0.2rem 1rem;
 }
 
 .tool__fonts select {
   padding: 0.3rem;
-  width: 21rem;
+  width: 22.5rem;
 }
 
 .tool__tiles .tool__input-tiles {
@@ -732,7 +756,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding: 1rem;
+  padding: 0.2rem 1rem;
 }
 
 .tool__tiles .tool__input-tiles label {
@@ -751,7 +775,7 @@ li {
 }
 
 .tool__sizes {
-  margin: 1rem;
+  margin: 0.1rem 1rem;
 }
 
 .tool__sizes .tool__radios {

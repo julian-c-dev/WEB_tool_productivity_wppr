@@ -80,10 +80,10 @@
 
 .tool__fonts {
   @extend %inputs;
-  margin: 1rem;
+  margin: 0.2rem 1rem;
   select {
     padding: 0.3rem;
-    width: 21rem;
+    width: 22.5rem;
   }
 }
 
@@ -91,7 +91,7 @@
   .tool__input-tiles {
     display: flex;
     flex-flow: column nowrap;
-    padding: 1rem;
+    padding: 0.2rem 1rem;
     label {
       font-size: 1.2rem;
       display: none;
@@ -112,7 +112,7 @@
 }
 
 .tool__sizes {
-  margin: 1rem;
+  margin: 0.1rem 1rem;
   .tool__radios {
     display: flex;
     flex-flow: column;
