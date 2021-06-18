@@ -497,35 +497,47 @@ input {
   justify-items: center;
 }
 
-.tile {
+.tile-big {
   background-color: white;
   border-radius: 50px;
   color: black;
   font-family: "Courgette";
   font-size: 3rem;
-  height: 350px;
   margin: 2rem;
   opacity: 0.2;
   padding: 3rem;
+  height: 750px;
   width: 700px;
 }
 
-.tile-serif {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.tile-mono {
-  font-family: monospace;
-}
-
-.tile-sansSerif {
+.tile-small {
+  background-color: white;
+  border-radius: 50px;
+  color: black;
   font-family: "Courgette";
+  font-size: 3rem;
+  margin: 2rem;
+  opacity: 0.2;
+  padding: 3rem;
+  height: 350px;
+  width: 700px;
 }
 
 .green {
   color: #62ffda;
 }
 
+/*
+&-serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+&-mono {
+  font-family: monospace;
+}
+&-sansSerif {
+  font-family: "Courgette";
+}*/
 .btn {
   outline: none;
   border: none;
@@ -679,7 +691,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem;
+  margin: 0 1rem;
 }
 
 .tool__screens .tool__selection {
@@ -693,6 +705,7 @@ input {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   border: 2px solid #62ffda;
+  cursor: pointer;
 }
 
 .tool__screens .select1 {
@@ -723,6 +736,41 @@ input {
 .tool__screens .select6 {
   background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
   background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.tool__screens .tool__selection_number {
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  border-radius: 25px;
+}
+
+.tool__screens .tool__selection_number:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  cursor: pointer;
+}
+
+.tool__screens .selectNumberTiles {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tool__screens .selectTwo {
+  background-image: url("/images/selectTwo.png");
+}
+
+.tool__screens .selectTwo:hover {
+  background-image: url("/images/selectTwoGreen.png");
+}
+
+.tool__screens .selectFour {
+  background-image: url("/images/selectFour.png");
+}
+
+.tool__screens .selectFour:hover {
+  background-image: url("/images/selectFourGreen.png");
 }
 
 @media screen and (min-width: 410px) {

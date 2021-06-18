@@ -29,7 +29,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
+  margin: 0 1rem;
 
   .tool__selection {
     width: 6rem;
@@ -39,6 +39,7 @@
     &:hover {
       transform: scale(1.05);
       border: 2px solid $green;
+      cursor: pointer;
     }
   }
 
@@ -63,6 +64,37 @@
   }
   .select6 {
     background-image: $selection6;
+  }
+
+  .tool__selection_number {
+    width: 8rem;
+    height: 8rem;
+    border: none;
+    border-radius: 25px;
+    &:hover {
+      transform: scale(1.3);
+      cursor: pointer;
+    }
+  }
+
+  .selectNumberTiles {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .selectTwo {
+    background-image: url("/images/selectTwo.png");
+    &:hover {
+      background-image: url("/images/selectTwoGreen.png");
+    }
+  }
+
+  .selectFour {
+    background-image: url("/images/selectFour.png");
+    &:hover {
+      background-image: url("/images/selectFourGreen.png");
+    }
   }
   @media screen and(min-width:410px) {
     .tool__selection {

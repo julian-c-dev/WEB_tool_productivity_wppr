@@ -70,29 +70,44 @@
   justify-items: center;
 }
 
-.tile {
+.tile-big {
   background-color: white;
   border-radius: 50px;
   color: black;
   font-family: "Courgette";
   font-size: 3rem;
-  height: 350px;
   margin: 2rem;
   opacity: 0.2;
   padding: 3rem;
+  height: 750px;
   width: 700px;
-  &-serif {
-    font-family: "Times New Roman", Times, serif;
-  }
+}
 
-  &-mono {
-    font-family: monospace;
-  }
-  &-sansSerif {
-    font-family: "Courgette";
-  }
+.tile-small {
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  font-family: "Courgette";
+  font-size: 3rem;
+  margin: 2rem;
+  opacity: 0.2;
+  padding: 3rem;
+  height: 350px;
+  width: 700px;
 }
 
 .green {
   color: $green;
 }
+
+/*
+&-serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+&-mono {
+  font-family: monospace;
+}
+&-sansSerif {
+  font-family: "Courgette";
+}*/
