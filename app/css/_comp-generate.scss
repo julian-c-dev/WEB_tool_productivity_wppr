@@ -9,15 +9,12 @@
 }
 
 .tool__content {
+  align-items: center;
   color: $lightest-navy;
-  font-family: "Open Sans";
-  padding: 2rem;
   display: flex;
   flex-flow: column wrap;
-  font-size: 1.6rem;
   justify-content: center;
-  align-items: center;
-  line-height: 1.2;
+  padding: 2rem;
 
   p {
     margin: 0.5rem auto;
@@ -120,18 +117,27 @@
 }
 
 .tool__tiles {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 3rem;
+
   .tool__input-tiles {
     display: flex;
     flex-flow: column nowrap;
     padding: 0.2rem 1rem;
-    label {
-      font-size: 1.2rem;
-      display: none;
-      &:focus {
-        font-weight: bold;
-      }
+  }
+  label {
+    font-size: 0.8rem;
+    display: none;
+    &:focus {
+      font-weight: bold;
     }
-    @extend %inputs;
+  }
+  @extend %inputs;
+
+  input {
+    cursor: text;
   }
 }
 

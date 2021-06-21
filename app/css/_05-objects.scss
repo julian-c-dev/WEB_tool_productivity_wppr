@@ -11,35 +11,16 @@
   position: relative;
 }
 
-.banner,
-.footer {
+.banner {
   padding: 2rem 0;
   background-color: $lightest-navy;
+  background-size: cover;
 }
 
 .banner {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-}
-
-.footer {
-  padding: 0.5rem 0;
-  text-align: center;
-  font: 1.2rem sans-serif;
-  line-height: 0.5;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-
-  a,
-  a:link,
-  a:visited,
-  a:hover,
-  a:active {
-    color: $lightest-slate;
-    text-decoration: none;
-  }
 }
 
 .hide {
@@ -80,7 +61,7 @@
   opacity: 0.2;
   padding: 3rem;
   height: 750px;
-  width: 700px;
+  width: 650px;
 }
 
 .tile-small {
@@ -93,7 +74,7 @@
   opacity: 0.2;
   padding: 3rem;
   height: 350px;
-  width: 700px;
+  width: 650px;
 }
 
 .green {
