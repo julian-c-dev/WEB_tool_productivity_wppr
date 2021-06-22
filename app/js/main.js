@@ -250,7 +250,7 @@ icon6Tile.onclick = () => {
   turnGreen(icon6Tile);
 };
 
-// & Select Fonts
+/* & Select Fonts
 const getFont = document.getElementById("fonts");
 const getTiles = document.getElementsByClassName("tile");
 if (getFont === "font1") {
@@ -261,9 +261,7 @@ if (getFont === "font2") {
 }
 if (getFont === "font3") {
   getTiles.classList.toggle("tile-mono");
-}
-
-console.log(getTiles);
+}*/
 
 // ~ BUTTONS ~
 
