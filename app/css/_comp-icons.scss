@@ -1,10 +1,19 @@
 .icon {
-  &-active {
+  &-regular {
+    color: $light-navy;
+    &:hover {
+      color: $green;
+    }
+  }
+  &-actived {
     color: $green;
   }
 
   &-disable {
     color: $lightest-slate;
+    &:hover {
+      color: $lightest-slate;
+    }
   }
 
   &-hide {

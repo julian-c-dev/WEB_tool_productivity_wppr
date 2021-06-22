@@ -63,11 +63,15 @@
     background-image: $selection6;
   }
 
+  .selectTiles {
+    margin-top: 0;
+  }
+
   .tool__selection_number {
     width: 8rem;
     height: 8rem;
     border: none;
-    border-radius: 25px;
+
     &:hover {
       transform: scale(1.3);
       cursor: pointer;

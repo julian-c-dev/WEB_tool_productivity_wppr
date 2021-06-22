@@ -26,7 +26,7 @@ selectionColor2.onclick = () => {
 
 selectionColor3.onclick = () => {
   document.body.style.background =
-    "linear-gradient(135deg, #667eea 0%, #764ba2 100%)";
+    "linear-gradient(to top, #667eea 0%, #764ba2 100%)";
   document.body.style.backgroundSize = "100vw 130vh";
 };
 
@@ -52,7 +52,7 @@ selectionColor5.onclick = () => {
 
 selectionColor6.onclick = () => {
   document.body.style.background =
-    "linear-gradient(to right, #434343 0%, black 100%)";
+    "linear-gradient(to top, #434343 0%, black 100%)";
   document.body.style.backgroundSize = "100vw 130vh";
 };
 
@@ -101,6 +101,13 @@ function addIcon() {
   for (let icon of getIcons) {
     icon.classList.remove("icon-disable");
   }
+}
+
+function removeClassIconDisabled() {
+  icon1Tile.classList.remove("icon-disable");
+  icon2Tile.classList.remove("icon-disable");
+  icon1Tile.classList.add("icon-regular");
+  icon2Tile.classList.add("icon-regular");
 }
 
 function removeTextDomTwo() {
@@ -173,6 +180,7 @@ caugthSelectTwo.onclick = () => {
   appendTilesDomTwo();
   inputsToggleDomTwo();
   tilesToggleDomTwo();
+  removeClassIconDisabled();
 };
 
 caugthSelectFour.onclick = () => {
@@ -194,7 +202,10 @@ const icon5Tile = document.getElementById("iconTile5");
 const icon6Tile = document.getElementById("iconTile6");
 
 function turnGreen(icon) {
-  icon.classList.add("green");
+  icon.classList.add("icon-actived");
+  setTimeout(function () {
+    icon.classList.remove("icon-actived");
+  }, 2000);
 }
 
 icon1Tile.onclick = () => {
