@@ -490,8 +490,8 @@ input {
   margin: 2rem;
   opacity: 0.2;
   padding: 3rem;
-  height: 750px;
-  width: 650px;
+  height: 95vh;
+  width: 95%;
 }
 
 .tile-small {
@@ -503,8 +503,8 @@ input {
   margin: 2rem;
   opacity: 0.2;
   padding: 3rem;
-  height: 350px;
-  width: 650px;
+  height: 50vh;
+  width: 95%;
 }
 
 /*
@@ -643,10 +643,11 @@ input {
           box-shadow: 0 0 8px #62ffda;
   margin: 1.5rem auto;
   display: inline-block;
-  height: 580px;
+  height: 600px;
 }
 
 .tool__content {
+  margin-top: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -850,6 +851,7 @@ input {
 .tool__sizes .tool__radios label {
   font-size: 1.1rem;
   padding: 0 1rem 0 0;
+  margin: 0 0.3rem;
 }
 
 .tool__sizes .tool__radios label:hover {

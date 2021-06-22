@@ -5,10 +5,11 @@
   box-shadow: 0 0 8px $green;
   margin: 1.5rem auto;
   display: inline-block;
-  height: 580px;
+  height: 600px;
 }
 
 .tool__content {
+  margin-top: 1rem;
   align-items: center;
   color: $lightest-navy;
   display: flex;
@@ -163,6 +164,7 @@
     label {
       font-size: 1.1rem;
       padding: 0 1rem 0 0;
+      margin: 0 0.3rem;
       &:hover {
         color: $green;
       }
