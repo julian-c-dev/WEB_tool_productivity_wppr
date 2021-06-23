@@ -75,16 +75,22 @@
   padding: 3rem;
   height: 50vh;
   width: 95%;
-}
 
-/*
-&-serif {
-  font-family: "Times New Roman", Times, serif;
-}
+  &-courgette {
+    font-family: "Courgette", cursive;
+  }
 
-&-mono {
-  font-family: monospace;
+  &-roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  &-comicNeue {
+    font-family: "Comic Neue", cursive;
+  }
+
+  &-ptSerif {
+    font-family: "PT Serif", serif;
+  }
+  &-spaceMono {
+    font-family: "Space Mono", monospace;
+  }
 }
-&-sansSerif {
-  font-family: "Courgette";
-}*/

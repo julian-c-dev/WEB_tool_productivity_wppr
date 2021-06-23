@@ -87,7 +87,6 @@ const inputGroup3 = document.getElementsByClassName("input3");
 const inputGroup4 = document.getElementsByClassName("input4");
 const inputGroup5 = document.getElementsByClassName("input5");
 const inputGroup6 = document.getElementsByClassName("input6");
-console.log(inputGroup1);
 
 // ~ Functions:
 
@@ -181,6 +180,7 @@ caugthSelectTwo.onclick = () => {
   inputsToggleDomTwo();
   tilesToggleDomTwo();
   removeClassIconDisabled();
+  turnFont();
 };
 
 caugthSelectFour.onclick = () => {
@@ -190,6 +190,7 @@ caugthSelectFour.onclick = () => {
   appendTilesDomFour();
   inputsToggleDomFour();
   tilesToggleDomFour();
+  turnFont();
 };
 
 // & 3 - Type the titles for your tiles and add them by clicking on the plus icon:
@@ -250,19 +251,50 @@ icon6Tile.onclick = () => {
   turnGreen(icon6Tile);
 };
 
-/* & Select Fonts
-const getFont = document.getElementById("fonts");
-const getTiles = document.getElementsByClassName("tile");
-if (getFont === "font1") {
-  getTiles.classList.toggle("tile-sansSerif");
-}
-if (getFont === "font2") {
-  getTiles.classList.toggle("tile-serif");
-}
-if (getFont === "font3") {
-  getTiles.classList.toggle("tile-mono");
-}*/
+// & Select Fonts
 
+function turnFont() {
+  const getFont = document.getElementById("fonts");
+  const tileBig = document.getElementsByClassName("tile-big");
+  const tileSmall = document.getElementsByClassName("tile-small");
+  console.log(getFont.value);
+  console.log(tileBig);
+  console.log(tileSmall);
+
+  if (getFont.value === "font1") {
+    tileBig[0].style.fontFamily = "Courgette";
+    tileBig[1].style.fontFamily = "Courgette";
+  }
+
+  if (getFont.value === "font2") {
+    tileBig[0].style.fontFamily = "Roboto";
+    tileBig[1].style.fontFamily = "Roboto";
+  }
+}
+/*
+if (getFont.value === "font3") {
+}
+if (getFont.value === "font4") {
+}
+if (getFont.value === "font5") {
+}
+if (getFont.value === "font6") {
+}
+
+  
+  font-family: 
+
+
+  font-family: "Comic Neue", cursive;
+
+
+
+  font-family: "PT Serif", serif;
+
+
+  font-family: "Space Mono", monospace;
+
+*/
 // ~ BUTTONS ~
 
 // & Preview function:

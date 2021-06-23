@@ -677,17 +677,26 @@ input {
   width: 95%;
 }
 
-/*
-&-serif {
-  font-family: "Times New Roman", Times, serif;
+.tile-small-courgette {
+  font-family: "Courgette", cursive;
 }
 
-&-mono {
-  font-family: monospace;
+.tile-small-roboto {
+  font-family: "Roboto", sans-serif;
 }
-&-sansSerif {
-  font-family: "Courgette";
-}*/
+
+.tile-small-comicNeue {
+  font-family: "Comic Neue", cursive;
+}
+
+.tile-small-ptSerif {
+  font-family: "PT Serif", serif;
+}
+
+.tile-small-spaceMono {
+  font-family: "Space Mono", monospace;
+}
+
 .btn {
   outline: none;
   border: none;
