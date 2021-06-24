@@ -677,26 +677,6 @@ input {
   width: 95%;
 }
 
-.tile-small-courgette {
-  font-family: "Courgette", cursive;
-}
-
-.tile-small-roboto {
-  font-family: "Roboto", sans-serif;
-}
-
-.tile-small-comicNeue {
-  font-family: "Comic Neue", cursive;
-}
-
-.tile-small-ptSerif {
-  font-family: "PT Serif", serif;
-}
-
-.tile-small-spaceMono {
-  font-family: "Space Mono", monospace;
-}
-
 .btn {
   outline: none;
   border: none;
@@ -961,11 +941,13 @@ input {
 
 .tool__fonts {
   margin: 0.2rem 1rem;
+  cursor: pointer;
 }
 
 .tool__fonts select {
   padding: 0.3rem;
   width: 22.5rem;
+  cursor: pointer;
 }
 
 .tool__tiles {
@@ -1025,19 +1007,17 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .tool__sizes .tool__radios label {
   font-size: 1.1rem;
   padding: 0 1rem 0 0;
   margin: 0 0.3rem;
+  cursor: pointer;
 }
 
-.tool__sizes .tool__radios label:hover {
-  color: #62ffda;
-}
-
-.tool__sizes .tool__radios .radio-group {
+.tool__sizes .radio-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

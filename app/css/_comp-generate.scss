@@ -115,9 +115,11 @@
 .tool__fonts {
   @extend %inputs;
   margin: 0.2rem 1rem;
+  cursor: pointer;
   select {
     padding: 0.3rem;
     width: 22.5rem;
+    cursor: pointer;
   }
 }
 
@@ -156,24 +158,24 @@
 
 .tool__sizes {
   margin: 0.1rem 1rem 0.7rem 1rem;
+
   .tool__radios {
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     label {
       font-size: 1.1rem;
       padding: 0 1rem 0 0;
       margin: 0 0.3rem;
-      &:hover {
-        color: $green;
-      }
+      cursor: pointer;
     }
-    .radio-group {
-      display: flex;
-      flex-flow: row;
-      justify-content: center;
-      align-items: center;
-    }
+  }
+  .radio-group {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -255,7 +255,7 @@ icon6Tile.onclick = () => {
   turnGreen(icon6Tile);
 };
 
-// & Select Fonts
+// & 4 - Select a beautiful font family for your tiles titles:
 
 const getFont = document.getElementById("fonts");
 
@@ -303,30 +303,10 @@ function turnFontSmall() {
     for (let element of tileSmall) element.style.fontFamily = "Space Mono";
   }
 }
-/*
-if (getFont.value === "font3") {
-}
-if (getFont.value === "font4") {
-}
-if (getFont.value === "font5") {
-}
-if (getFont.value === "font6") {
-}
 
-  
-  font-family: 
+// & 5 - Choose the resolution of your screen in pixels:
+const getResolution = document.querySelector('input[name="radAnswer"]:checked');
 
-
-  font-family: "Comic Neue", cursive;
-
-
-
-  font-family: "PT Serif", serif;
-
-
-  font-family: "Space Mono", monospace;
-
-*/
 // ~ BUTTONS ~
 
 // & Preview function:
