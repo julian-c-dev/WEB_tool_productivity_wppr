@@ -180,7 +180,9 @@ caugthSelectTwo.onclick = () => {
   inputsToggleDomTwo();
   tilesToggleDomTwo();
   removeClassIconDisabled();
-  turnFont();
+  getFont.onclick = () => {
+    turnFontBig();
+  };
 };
 
 caugthSelectFour.onclick = () => {
@@ -190,7 +192,9 @@ caugthSelectFour.onclick = () => {
   appendTilesDomFour();
   inputsToggleDomFour();
   tilesToggleDomFour();
-  turnFont();
+  getFont.onclick = () => {
+    turnFontSmall();
+  };
 };
 
 // & 3 - Type the titles for your tiles and add them by clicking on the plus icon:
@@ -253,22 +257,50 @@ icon6Tile.onclick = () => {
 
 // & Select Fonts
 
-function turnFont() {
-  const getFont = document.getElementById("fonts");
+const getFont = document.getElementById("fonts");
+
+function turnFontBig() {
   const tileBig = document.getElementsByClassName("tile-big");
-  const tileSmall = document.getElementsByClassName("tile-small");
-  console.log(getFont.value);
-  console.log(tileBig);
-  console.log(tileSmall);
 
   if (getFont.value === "font1") {
-    tileBig[0].style.fontFamily = "Courgette";
-    tileBig[1].style.fontFamily = "Courgette";
+    for (let element of tileBig) element.style.fontFamily = "Courgette";
   }
 
   if (getFont.value === "font2") {
-    tileBig[0].style.fontFamily = "Roboto";
-    tileBig[1].style.fontFamily = "Roboto";
+    for (let element of tileBig) element.style.fontFamily = "Roboto";
+  }
+  if (getFont.value === "font3") {
+    for (let element of tileBig) element.style.fontFamily = "Comic Neue";
+  }
+  if (getFont.value === "font4") {
+    for (let element of tileBig) element.style.fontFamily = "PT Serif";
+  }
+  if (getFont.value === "font5") {
+    for (let element of tileBig) element.style.fontFamily = "Space Mono";
+  }
+}
+
+function turnFontSmall() {
+  const tileSmall = document.getElementsByClassName("tile-small");
+
+  if (getFont.value === "font1") {
+    for (let element of tileSmall) element.style.fontFamily = "Courgette";
+  }
+
+  if (getFont.value === "font2") {
+    for (let element of tileSmall) element.style.fontFamily = "Roboto";
+  }
+
+  if (getFont.value === "font3") {
+    for (let element of tileSmall) element.style.fontFamily = "Comic Neue";
+  }
+
+  if (getFont.value === "font4") {
+    for (let element of tileSmall) element.style.fontFamily = "PT Serif";
+  }
+
+  if (getFont.value === "font5") {
+    for (let element of tileSmall) element.style.fontFamily = "Space Mono";
   }
 }
 /*
