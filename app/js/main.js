@@ -2,6 +2,7 @@
 
 //  & 1.Select your favorite background from the following options:
 
+let selectBackground = "selection1";
 const selectionColor1 = document.querySelector(".select1");
 const selectionColor2 = document.querySelector(".select2");
 const selectionColor3 = document.querySelector(".select3");
@@ -15,25 +16,28 @@ selectionColor1.onclick = () => {
   document.body.style.background =
     "linear-gradient(to top, #30cfd0 0%, #330867 100%)";
   document.body.style.backgroundSize = "100vw 130vh";
+  selectedBackground = "selection1";
 };
 
 selectionColor2.onclick = () => {
   document.body.style.background =
     "linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%)";
-
   document.body.style.backgroundSize = "100vw 130vh";
+  selectedBackground = "selection2";
 };
 
 selectionColor3.onclick = () => {
   document.body.style.background =
     "linear-gradient(to top, #667eea 0%, #764ba2 100%)";
   document.body.style.backgroundSize = "100vw 130vh";
+  selectedBackground = "selection3";
 };
 
 selectionColor4.onclick = () => {
   document.body.style.background =
     "linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)";
   document.body.style.backgroundSize = "100vw 130vh";
+  selectedBackground = "selection4";
 };
 
 selectionColor5.onclick = () => {
@@ -48,15 +52,19 @@ selectionColor5.onclick = () => {
         #1c1a27 100%
       )`;
   document.body.style.backgroundSize = "100vw 130vh";
+  selectedBackground = "selection5";
 };
 
 selectionColor6.onclick = () => {
   document.body.style.background =
     "linear-gradient(to top, #434343 0%, black 100%)";
   document.body.style.backgroundSize = "100vw 130vh";
+  selectedBackground = "selection6";
 };
 
 // & 2 - How many tiles do you want to add to your Wallpaper?
+
+let selectedTiles = 2;
 
 // * images:
 const caugthSelectTwo = document.querySelector(".selectTwo");
@@ -183,6 +191,7 @@ caugthSelectTwo.onclick = () => {
   getFont.onclick = () => {
     turnFontBig();
   };
+  selectedTiles = 2;
 };
 
 caugthSelectFour.onclick = () => {
@@ -195,6 +204,7 @@ caugthSelectFour.onclick = () => {
   getFont.onclick = () => {
     turnFontSmall();
   };
+  selectedTiles = 4;
 };
 
 // & 3 - Type the titles for your tiles and add them by clicking on the plus icon:
@@ -257,25 +267,32 @@ icon6Tile.onclick = () => {
 
 // & 4 - Select a beautiful font family for your tiles titles:
 
+let selectedFonts = "Courgette";
+
 const getFont = document.getElementById("fonts");
 
 function turnFontBig() {
   const tileBig = document.getElementsByClassName("tile-big");
 
   if (getFont.value === "font1") {
+    selectedFonts = "Courgette";
     for (let element of tileBig) element.style.fontFamily = "Courgette";
   }
 
   if (getFont.value === "font2") {
+    selectedFonts = "Roboto";
     for (let element of tileBig) element.style.fontFamily = "Roboto";
   }
   if (getFont.value === "font3") {
+    selectedFonts = "Comic Neue";
     for (let element of tileBig) element.style.fontFamily = "Comic Neue";
   }
   if (getFont.value === "font4") {
+    selectedFonts = "PT Serif";
     for (let element of tileBig) element.style.fontFamily = "PT Serif";
   }
   if (getFont.value === "font5") {
+    selectedFonts = "Space Mono";
     for (let element of tileBig) element.style.fontFamily = "Space Mono";
   }
 }
@@ -284,28 +301,34 @@ function turnFontSmall() {
   const tileSmall = document.getElementsByClassName("tile-small");
 
   if (getFont.value === "font1") {
+    selectedFonts = "Courgette";
     for (let element of tileSmall) element.style.fontFamily = "Courgette";
   }
 
   if (getFont.value === "font2") {
+    selectedFonts = "Roboto";
     for (let element of tileSmall) element.style.fontFamily = "Roboto";
   }
 
   if (getFont.value === "font3") {
+    selectedFonts = "Comic Neue";
     for (let element of tileSmall) element.style.fontFamily = "Comic Neue";
   }
 
   if (getFont.value === "font4") {
+    selectedFonts = "PT Serif";
     for (let element of tileSmall) element.style.fontFamily = "PT Serif";
   }
 
   if (getFont.value === "font5") {
+    selectedFonts = "Space Mono";
     for (let element of tileSmall) element.style.fontFamily = "Space Mono";
   }
 }
 
 // & 5 - Choose the resolution of your screen in pixels:
-const getResolution = document.querySelector('input[name="radAnswer"]:checked');
+let resolution = document.getElementsByName("radAnswer");
+let selectedResolution = resolution.checked;
 
 // ~ BUTTONS ~
 
@@ -335,11 +358,11 @@ const wallpaper_obj = document.querySelector("#generate");
 
 wallpaper_obj.onclick = () => {
   let user_wallpaper = {
-    id: Math.random(1, 100),
-    background: "selectionColor1.value",
-    tiles: "tiles.value",
-    tiles_titles: [],
-    resolution: "resolution.value",
+    id: Math.floor(Math.random() * (1000 - 100) + 100) / 100,
+    selectBackground,
+    selectedTiles,
+    selectedFonts,
+    selectedResolution,
   };
   alert(JSON.stringify(user_wallpaper));
 };
