@@ -359,7 +359,7 @@ function previewOut() {
   caughtIcon[0].classList.toggle("hidden");
   caugthBanner[0].classList.toggle("hide");
   caughtTool[0].classList.remove("hidden");
-  caugthCredits[0].classList.toggle("hidden ");
+  caugthCredits[0].classList.toggle("hidden");
 }
 
 // & Generate function (download button):
