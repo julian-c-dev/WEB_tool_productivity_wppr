@@ -179,3 +179,23 @@
     align-items: center;
   }
 }
+
+.credit__side {
+  width: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailto {
+  writing-mode: vertical-lr;
+  &:link {
+    text-decoration: none;
+    color: black;
+    font: 1em "Space Mono";
+  }
+}

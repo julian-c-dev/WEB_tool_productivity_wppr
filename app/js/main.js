@@ -344,11 +344,13 @@ let resolution;
 const caughtTool = document.getElementsByClassName("tool");
 const caughtIcon = document.getElementsByClassName("wrapper");
 const caugthBanner = document.getElementsByClassName("banner");
+const caugthCredits = document.getElementsByClassName("credit__side");
 
 function previewIn() {
   caughtTool[0].classList.toggle("hidden");
   caugthBanner[0].classList.toggle("hide");
   caughtIcon[0].classList.remove("hidden");
+  caugthCredits[0].classList.toggle("hidden");
 }
 
 caughtIcon[0].addEventListener("click", previewOut, false);
@@ -357,6 +359,7 @@ function previewOut() {
   caughtIcon[0].classList.toggle("hidden");
   caugthBanner[0].classList.toggle("hide");
   caughtTool[0].classList.remove("hidden");
+  caugthCredits[0].classList.toggle("hidden ");
 }
 
 // & Generate function (download button):
