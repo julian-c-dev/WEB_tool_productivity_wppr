@@ -365,6 +365,9 @@ function previewOut() {
 // & Generate function (download button):
 
 const wallpaper_obj = document.querySelector("#generate");
+const toolContent = document.querySelector(".tool__content");
+const toolContentThanks = document.querySelector(".tool__content_thanks");
+const toolSpinner = document.querySelector(".spinner");
 
 function showTitles(tiles) {
   if (tiles === 0) return ["No titles selected"];
@@ -381,8 +384,20 @@ wallpaper_obj.onclick = () => {
     font,
     resolution: [...getRadios.children].find((c) => c.checked).value,
   };
-
   console.log(JSON.stringify(user_wallpaper));
+  toolContent.classList.toggle("hidden");
+
+  setTimeout(function () {
+    toolSpinner.style.display = "flex";
+  }, 200);
+
+  setTimeout(function () {
+    toolSpinner.style.display = "none";
+  }, 3000);
+
+  setTimeout(function () {
+    toolContentThanks.style.display = "flex";
+  }, 3000);
 };
 
 // & Btn Reset

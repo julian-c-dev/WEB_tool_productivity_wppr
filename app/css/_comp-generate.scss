@@ -22,6 +22,14 @@
   }
 }
 
+.tool__content_thanks {
+  color: $dark-navy;
+  display: none;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 5rem;
+}
+
 .tool__screens {
   display: flex;
   flex-wrap: wrap;
