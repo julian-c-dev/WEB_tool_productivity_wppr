@@ -398,10 +398,20 @@ wallpaper_obj.onclick = () => {
   setTimeout(function () {
     toolContentThanks.style.display = "flex";
   }, 3000);
+
+  setTimeout(function () {
+    toolContent.remove();
+  }, 3000);
 };
 
 // & Btn Reset
-const btnReset = document.getElementById("reset");
-btnReset.onclick = () => {
+const btnReset1 = document.getElementById("reset1");
+const btnReset2 = document.getElementById("reset2");
+
+btnReset1.onclick = () => {
+  window.location.reload();
+};
+
+btnReset2.onclick = () => {
   window.location.reload();
 };

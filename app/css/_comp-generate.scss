@@ -27,7 +27,11 @@
   display: none;
   flex-flow: column wrap;
   align-items: center;
-  margin-top: 5rem;
+  padding: 7rem;
+
+  & button {
+    margin-top: 5rem;
+  }
 }
 
 .tool__screens {
