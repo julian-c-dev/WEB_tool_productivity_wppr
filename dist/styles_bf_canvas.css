@@ -718,15 +718,18 @@ input {
 
 .main .tool,
 .main .tilesContainer {
+  -ms-grid-row: 1;
   grid-row-start: 1;
-
+  -ms-grid-column: 1;
   grid-column-start: 1;
 }
 
 .tilesContainer {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr 1fr) [1];
   grid-template-columns: repeat(1, 1fr 1fr);
+  -ms-flex-line-pack: center;
   align-content: center;
   justify-items: center;
 }
@@ -1139,7 +1142,9 @@ input {
 
 .tool__tiles {
   margin-top: 1rem;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr) [2];
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem 1rem;
 }

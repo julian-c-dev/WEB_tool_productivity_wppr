@@ -1,0 +1,30 @@
+// ! Color palette:
+$dark-navy: #020c1b;
+$navy: #0a192f;
+$light-navy: #112240;
+$lightest-navy: #233554;
+$navy-shadow: rgba(2, 12, 27, 0.7);
+$dark-slate: #495670;
+$slate: #8892b0;
+$light-slate: #a8b2d1;
+$lightest-slate: #ccd6f6;
+$white: #e6f1ff;
+$green: #62ffda;
+$green-tint: rgba(100, 255, 218, 0.1);
+
+$selection1: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+$selection2: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+$selection3: linear-gradient(to top, #667eea 0%, #764ba2 100%);
+$selection4: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+$selection5: linear-gradient(
+  to top,
+  #dbdcd7 0%,
+  #dddcd7 24%,
+  #e2c9cc 30%,
+  #e7627d 46%,
+  #b8235a 59%,
+  #801357 71%,
+  #3d1635 84%,
+  #1c1a27 100%
+);
+$selection6: linear-gradient(to top, #434343 0%, black 100%);

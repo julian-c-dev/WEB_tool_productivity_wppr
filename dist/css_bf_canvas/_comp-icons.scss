@@ -1,0 +1,34 @@
+.icon {
+  &-regular {
+    color: $light-navy;
+    &:hover {
+      color: $green;
+    }
+  }
+  &-actived {
+    color: $green;
+  }
+
+  &-disable {
+    color: $lightest-slate;
+    &:hover {
+      color: $lightest-slate;
+    }
+  }
+
+  &-hide {
+    visibility: hidden;
+  }
+}
+
+.wrapper {
+  align-items: center;
+  margin: 1rem;
+  padding: 10px;
+  margin-right: 1rem;
+  background-color: $green;
+  border-radius: 50px;
+  border: 1px solid $green;
+  position: fixed;
+  bottom: 0;
+}

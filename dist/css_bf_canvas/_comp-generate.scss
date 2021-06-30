@@ -1,0 +1,213 @@
+.tool {
+  z-index: 999;
+  background-color: $light-slate;
+  border-radius: 25px;
+  box-shadow: 0 0 8px $green;
+  margin: 1.5rem auto;
+  display: inline-block;
+  height: 600px;
+}
+
+.tool__content {
+  margin-top: 1rem;
+  align-items: center;
+  color: $lightest-navy;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 2rem;
+
+  p {
+    margin: 0.5rem auto;
+  }
+}
+
+.tool__content_thanks {
+  color: $dark-navy;
+  display: none;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 7rem;
+
+  & button {
+    margin-top: 5rem;
+  }
+}
+
+.tool__screens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+
+  .tool__selection {
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    border-radius: 25px;
+    &:hover {
+      transform: scale(1.05);
+      border: 2px solid $green;
+      cursor: pointer;
+    }
+  }
+
+  .select1 {
+    background-image: $selection1;
+  }
+
+  .select2 {
+    background-image: $selection2;
+  }
+
+  .select3 {
+    background-image: $selection3;
+  }
+
+  .select4 {
+    background-image: $selection4;
+  }
+
+  .select5 {
+    background-image: $selection5;
+  }
+  .select6 {
+    background-image: $selection6;
+  }
+
+  .selectTiles {
+    margin-top: 0;
+  }
+
+  .tool__selection_number {
+    width: 8rem;
+    height: 8rem;
+    border: none;
+
+    &:hover {
+      transform: scale(1.3);
+      cursor: pointer;
+    }
+  }
+
+  .selectNumberTiles {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .selectTwo {
+    background-image: url("/images/selectTwo.png");
+    &:hover {
+      background-image: url("/images/selectTwoGreen.png");
+    }
+  }
+
+  .selectFour {
+    background-image: url("/images/selectFour.png");
+    &:hover {
+      background-image: url("/images/selectFourGreen.png");
+    }
+  }
+  @media screen and(min-width:410px) {
+    .tool__selection {
+      width: 6rem;
+      height: 6 rem;
+    }
+  }
+  @media screen and(min-width:900px) {
+    .tool__selection {
+      width: 9rem;
+      height: 9rem;
+    }
+  }
+}
+
+.tool__fonts {
+  @extend %inputs;
+  margin: 0.2rem 1rem;
+  cursor: pointer;
+  select {
+    padding: 0.3rem;
+    width: 22.5rem;
+    cursor: pointer;
+  }
+}
+
+.tool__tiles {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem 1rem;
+
+  .tool__input-tiles {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0.2rem 1rem;
+  }
+  label {
+    font-size: 0.8rem;
+    display: none;
+    &:focus {
+      font-weight: bold;
+    }
+  }
+  @extend %inputs;
+
+  input {
+    cursor: text;
+  }
+}
+
+@media screen and(min-width:460px) {
+  .tool__input-tiles {
+    label {
+      display: initial;
+    }
+  }
+}
+
+.tool__sizes {
+  margin: 0.1rem 1rem 0.7rem 1rem;
+
+  .tool__radios {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    label {
+      font-size: 1.1rem;
+      padding: 0 1rem 0 0;
+      margin: 0 0.3rem;
+      cursor: pointer;
+    }
+  }
+  .radio-group {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.credit__side {
+  width: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailto {
+  writing-mode: vertical-lr;
+  &:link {
+    text-decoration: none;
+    color: black;
+    font: 1em "Space Mono";
+  }
+}
