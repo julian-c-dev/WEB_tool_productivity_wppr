@@ -547,6 +547,13 @@ h1 {
   font-size: 4.3rem;
 }
 
+h3 {
+  margin: 0.5rem 0;
+  color: #62ffda;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px black;
+}
+
 span {
   color: #62ffda;
   text-shadow: 0 0 15px pink;
@@ -716,7 +723,7 @@ input {
 }
 
 .textBorder {
-  padding: 2rem;
+  padding: 1rem;
   border: 5px dotted #62ffda;
 }
 
@@ -890,11 +897,11 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 7rem;
+  padding: 1rem 7rem;
 }
 
 .tool__content_thanks button {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .tool__screens {

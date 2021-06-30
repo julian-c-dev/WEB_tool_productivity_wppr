@@ -375,17 +375,35 @@ function showTitles(tiles) {
   if (tiles === 4) return [title3, title4, title5, title6];
 }
 
+const textBackground = document.getElementById("textBackground");
+const textTiles = document.getElementById("textTiles");
+const textTitles = document.getElementById("textTitles");
+const textFont = document.getElementById("textFont");
+const textResolution = document.getElementById("textResolution");
+
+const displayBackground = document.getElementById("textBackground");
+
 wallpaper_obj.onclick = () => {
   let user_wallpaper = {
-    id: Math.floor(Math.random() * (1000 - 100) + 100) / 100,
     background,
     tiles,
     titles: showTitles(tiles),
     font,
     resolution: [...getRadios.children].find((c) => c.checked).value,
   };
-  console.log(JSON.stringify(user_wallpaper));
   toolContent.classList.toggle("hidden");
+  console.log(JSON.stringify(user_wallpaper));
+
+  textBackground.innerHTML =
+    "Background: " + "<strong>" + user_wallpaper.background + "</strong>";
+  textTiles.innerHTML =
+    "Tiles: " + "<strong>" + user_wallpaper.tiles + "</strong>";
+  textTitles.innerHTML =
+    "Titles: " + "<strong>" + user_wallpaper.titles + "</strong>";
+  textFont.innerHTML =
+    "Font: " + "<strong>" + user_wallpaper.font + "</strong>";
+  textResolution.innerHTML =
+    "Resolution: " + "<strong>" + user_wallpaper.resolution + "</strong>";
 
   setTimeout(function () {
     toolSpinner.style.display = "flex";
