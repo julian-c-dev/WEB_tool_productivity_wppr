@@ -381,8 +381,6 @@ const textTitles = document.getElementById("textTitles");
 const textFont = document.getElementById("textFont");
 const textResolution = document.getElementById("textResolution");
 
-const displayBackground = document.getElementById("textBackground");
-
 wallpaper_obj.onclick = () => {
   let user_wallpaper = {
     background,
