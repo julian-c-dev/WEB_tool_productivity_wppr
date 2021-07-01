@@ -601,6 +601,8 @@ var caughtTool = document.getElementsByClassName("tool");
 var caughtIcon = document.getElementsByClassName("wrapper");
 var caugthBanner = document.getElementsByClassName("banner");
 var caugthCredits = document.getElementsByClassName("credit__side");
+var caughtPreviewBtn = document.getElementById("preview");
+caughtPreviewBtn.addEventListener("click", previewIn, false);
 
 function previewIn() {
   caughtTool[0].classList.toggle("hidden");
@@ -706,7 +708,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54158" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51553" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
