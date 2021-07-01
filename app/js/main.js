@@ -346,6 +346,9 @@ const caughtIcon = document.getElementsByClassName("wrapper");
 const caugthBanner = document.getElementsByClassName("banner");
 const caugthCredits = document.getElementsByClassName("credit__side");
 
+const caughtPreviewBtn = document.getElementById("preview");
+caughtPreviewBtn.addEventListener("click", previewIn, false);
+
 function previewIn() {
   caughtTool[0].classList.toggle("hidden");
   caugthBanner[0].classList.toggle("hide");
