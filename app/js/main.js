@@ -1,5 +1,7 @@
 // This code stinks, I know, it was the first approach (I am learning), It needs to become DRY.
 
+// ! No responsive page => less than 1024px === overlay layer
+
 //  & 1.Select your favorite background from the following options:
 
 let background = "selection1";

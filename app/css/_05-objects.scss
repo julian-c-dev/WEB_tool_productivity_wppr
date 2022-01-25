@@ -1,113 +1,146 @@
-::placeholder {
-  font-size: 1.1rem;
-
-  font-family: "Courgette";
-  padding-left: 1rem;
-  color: $light-slate;
-}
-
 .container {
-  min-width: 1200px;
   position: relative;
+  display: none;
 }
 
-.banner {
-  padding: 1.3rem 0;
-  background-color: $lightest-navy;
-  background-size: cover;
-}
-
-.banner {
-  display: flex;
-  flex-flow: row wrap;
+.overlay {
+  position: fixed;
+  display: block;
   width: 100%;
+  height: 100%;
+  background-color: rgb(20, 22, 22);
+  z-index: 9999;
 }
 
-.hide {
-  display: none;
-}
-
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 3s, opacity 0.1s linear;
-}
-
-.spinner {
-  display: none;
-  margin: auto;
+.overlay_text {
+  display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  margin-top: 20rem;
-  border: 5px solid rgba(0, 0, 0, 0.1);
-  width: 190px;
-  height: 190px;
-  border-radius: 50%;
-  border-left-color: $green;
-  animation: spin 1s infinite;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  h2,
+  p {
+    white-space: initial;
+    max-width: 90%;
+    margin: 5rem;
   }
 }
 
-.main {
-  display: grid;
-  grid-template-columns: 1fr;
-}
+@media screen and(min-width:1024px) {
+  .overlay {
+    display: none;
+  }
+  .overlay_text {
+    display: none;
+  }
 
-.main .tool,
-.main .tilesContainer {
-  grid-row-start: 1;
-  grid-column-start: 1;
-}
+  ::placeholder {
+    font-size: 1.1rem;
+    font-family: "Courgette";
+    padding-left: 1rem;
+    color: $light-slate;
+  }
+  .container {
+    position: relative;
+    display: block;
+  }
 
-.tilesContainer {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr 1fr);
-  align-content: center;
-  justify-items: center;
-}
+  .banner {
+    padding: 1.3rem 0;
+    background-color: $lightest-navy;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
 
-.tile-big {
-  background-color: white;
-  border-radius: 50px;
-  color: black;
-  font-family: "Courgette";
-  font-size: 3rem;
-  margin: 2rem;
-  opacity: 0.2;
-  padding: 3rem;
-  height: 95vh;
-  width: 95%;
-}
+  .hide {
+    display: none;
+  }
 
-.tile-small {
-  background-color: white;
-  border-radius: 50px;
-  color: black;
-  font-family: "Courgette";
-  font-size: 3rem;
-  margin: 2rem;
-  opacity: 0.2;
-  padding: 3rem;
-  height: 50vh;
-  width: 95%;
-}
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 3s, opacity 0.1s linear;
+  }
 
-.textBorder {
-  padding: 1rem;
-  border: 5px dotted $green;
-}
+  .spinner {
+    display: none;
+    margin: auto;
+    justify-content: center;
+    margin-top: 20rem;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border-left-color: $green;
+    animation: spin 1s infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
-.textSmaller {
-  font-size: smaller;
-  font-style: italic;
-}
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-.textBold {
-  font-weight: bold;
+  .main .tool,
+  .main .tilesContainer {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  .tilesContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr);
+    align-content: center;
+    justify-items: center;
+  }
+
+  .tile-big {
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    font-family: "Courgette";
+    font-size: 3rem;
+    margin: 2rem;
+    opacity: 0.2;
+    padding: 3rem;
+    height: 95vh;
+    width: 95%;
+  }
+
+  .tile-small {
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    font-family: "Courgette";
+    font-size: 3rem;
+    margin: 2rem;
+    opacity: 0.2;
+    padding: 3rem;
+    height: 50vh;
+    width: 95%;
+  }
+
+  .textBorder {
+    padding: 1rem;
+    border: 5px dotted $green;
+  }
+
+  .textSmaller {
+    font-size: smaller;
+    font-style: italic;
+  }
+
+  .textBold {
+    font-weight: bold;
+  }
 }
